@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sector&Combination</title>
+    <style type ="text/css">
+      
+       p{
+        background-color: antiquewhite;
+       }
+       .para1{
+         background-color: rgb(201, 114, 204);
+       }
+       .center{
+        text-align: center;
+       }
+       *{
+         background-color: rgb(157, 255, 0);
+         color:blue;
+         font-size: 30px;
+       }
+       h3,div{
+        background-color: aqua;
+        font-size: 40px;
+        font-style: italic;
+        font-weight: 100;
+        text-decoration: underline;
+        text-shadow: 2px 2px;
+        text-align: center;
+       }
+       div p{
+         background-color: rgb(95, 185, 221);
+         color:rgb(223, 11, 39);
+         text-align: right;
+         font-size: 80px;
+         text-decoration: underline white;
+       }
+
+       span > h4{    
+        <!--Child selector-->         
+        color:black;
+        background-color: rgb(235, 158, 218);
+        width: 200px;
+        padding: 20px;
+        margin-left: 150px;
+       }
+       span + P{
+        <!--Adjacent selector-->
+         font-size: xx-large;
+         background-color: rgb(2, 2, 68);
+         color:aliceblue;
+       }
+
+       footer ~ p{
+         font-size: xx-large;
+         font-style: oblique;
+         background-color: black;
+         color:white;
+         width: 400px;
+         padding: 50px;
+        
+       }
+       
+    </style>
+</head>
+
+<body>
+    <h1> This is a h1</h1>
+    <p class="para1 center">This is a paragraph 1</p>
+    <p>This is a paragraph 2</p>
+    <p>This is a paragraph 3</p>
+
+    <h3>Hello world1</h3>
+    
+    <div>
+       <h3>Hello Bangladesh</h3>
+       <h3>Bangladesh</h3>
+       <p>Finland</p>
+    </div>
+    <p>
+        <h5>Germany</h5>
+        <h5>England</h5>
+
+    </p>
+    <span>
+        <h4>Child Selector</h4>
+    </span>
+        <p>Adjacent Selector</p>
+
+    <footer>
+       <p>This is footer</p>
+    </footer>
+    <p>General sibling Selector1</p>
+    <p>General sibling Selector2</p>
+        
+    
+</body>
+</html>
