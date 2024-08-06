@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class, Pseudo Elements</title>
+    <style>
+        /* pseudo class :
+           pseudo element ::  */
+       a:hover{
+        color:chartreuse;
+       }
+       a.my-link:hover{
+        color:aqua;
+       }
+
+       input{
+        padding: 10px;
+        font-size: 1rem;
+        width: 150px;
+       }
+       input:hover{
+        background-color: aquamarine;s
+       }
+       table,td{
+        border: 1px solid blue;
+       }
+
+       tr:nth-child(odd){
+        background-color: rgb(214, 138, 204);
+       }
+       div.e1:hover{
+        color:blue;
+        background-color: antiquewhite;
+
+       }
+       div.e1::first-letter{
+         color:red;
+         font-size: 2rem;
+       }
+       p.e1:hover{
+          background-color: aquamarine;
+          display:inline;
+       }
+       p::after{
+        content: ">>>>";
+        color: red;
+       }
+       p::before{
+        content:"**";
+       }
+    </style>
+</head>
+<body>
+    <a class="my-link" href="#">Tutorial</a>
+    <a href="#">Home</a>
+    <a href="#">Menu</a>
+
+    <input type="text" placeholder="Enter your name">
+    <table>
+        <tr>
+            <td>Name</td>
+            <td>Id</td>
+        </tr>
+        <tr>
+            <td>Mehraj</td>
+            <td>1006</td>
+        </tr>
+        <tr>
+            <td>Turja</td>
+            <td>1001</td>
+        </tr>
+    </table>
+    
+    <div class="e1">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+    </div>
+
+    <p class="e1">Without Hobber</p>
+    
+</body>
+</html>
