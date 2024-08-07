@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class and Elements</title>
+    <style>
+        div.demo:hover{
+            background-color: aquamarine;
+            color:blue;
+        }
+       
+        .demo p:last-child{
+            background-color: antiquewhite;
+            color:red;
+        }
+        h1:hover{
+            background-color: black;
+            color: white;
+        }
+ /*  demo2 p:nth-child(odd)  */
+        .demo2 p:nth-child(2n+1){
+            background-color: rgb(207, 228, 20);
+        }
+      
+        li:nth-child(odd){
+            background-color: rgb(183, 126, 236);
+            display:inline;
+        }
+        li:last-of-type{
+            color:blue;
+        }
+        .para p::first-letter{
+            font-size: 30px;
+            color:blue;
+        }
+        .para p::after{
+            content: "$";
+        }
+        .para::before{
+            content: "";
+            width: 50%;
+            height: 20px;
+            background-color:yellowgreen;
+            display: inline-block;
+        }
+       /* If any text are selected then it turns into red color automatically */ 
+       ::selection{
+        color:red;
+       
+       }
+       input::placeholder{
+        color:green;
+       }
+
+    </style>
+</head>
+<body>
+    <div class="demo">
+        <p>1Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, aut?</p>
+        <p>2Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate similique nulla, aperiam quibusdam quaerat a quasi facilis tenetur eius </p>
+        <p>3Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima, praesentium!</p>
+
+     </div>
+     <div class="demo2">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet, cumque.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio distinctio non iure sequi officiis, nulla consequatur ad saepe libero impedit!</p>
+
+     </div>
+    <h1>4Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, debitis?</h1>
+
+     <table>
+        <tr>
+            <td></td>
+        </tr>
+     </table>
+
+     <ul>
+        
+        <li>Home2</li>
+        <li>Home3</li>
+        <li>Home4</li>
+     </ul>
+
+     <div class="para">
+        <p>Lorem1, ipsum dolor sit amet consectetur adipisicing elit. Nostrum, ad?</p>
+     <p>Lorem2, ipsum dolor sit amet consectetur adipisicing elit. Nostrum, ad?</p>
+     <p>Lorem3, ipsum dolor sit amet consectetur adipisicing elit. Nostrum, ad?</p>
+
+     </div>
+     
+     <input type="text" placeholder="Hello Everyone"/>
+
+
+</body>
+</html>
