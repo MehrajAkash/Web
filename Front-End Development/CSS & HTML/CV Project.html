@@ -21,15 +21,20 @@
     padding: 20px;
    }
    .profile-pic{
-    width: 100px;
-    height: 120px;
+    width: 150px;
+    height: 180px;
     border-radius: 50%;
     border: forestgreen 2px solid;
     float:left;
    }
    .profile-bio{
     float:left;
-    padding: 25px;
+    padding: 35px;
+    margin-top:20px;
+   }
+   .profile-bio h1:hover{
+    color:blue;
+    cursor:cell;
    }
    h1,h2,h3,h4,h5,h6{
     color:rgb(10, 173, 151);
@@ -63,24 +68,24 @@
    }
    .personal-contain{
     margin-bottom: 10px;
-    display: flex;
+    
    }
 
-   .personal-left{
+   .left{
     width: 30%;
     
      float: left;
      
    }
-   .personal-right{
+   .right{
     width:70%;
      float: left;
      
    }
    .common-hr{
-    border-bottom: 3px solid blue;
+    border-bottom: 2px solid blue;
     width: 100%;
-    margin: 10px  auto;
+    margin: 20px  auto;
     
    } 
 
@@ -89,23 +94,30 @@
        
     }
     .work-contain{
-     margin-bottom: 10px;
      
-     
+    
     }
  
-    .work-left{
-     width: 30%;
-      float: left;
-      height: 100%;
-      
+    /****Education****/
+    #education-sectoin{
+        
     }
-    .work-right{
-     width:70%
-     float: left;
-     height: 100%;
-      
+    .education-contain{
+       
     }
+    .left2{
+        width: 50%;
+        float: left;
+    }
+    .right2{
+        width: 50%;
+        float: left;
+    }
+
+    /*****footer******/
+
+
+
 
     </style>
 
@@ -120,12 +132,12 @@
         <header>
             <img class="profile-pic" src="./Passport size pic.jpg" alt="">
             <div class="profile-bio">
-                <h1>Mehraj Akash</h1>
-                <h4>Wed Designer</h4>
+                <p><h1>Mehraj Akash</h1></p>
+                <p><h4>Web Designer</h4></p>
             </div>
             <div class="header-contact">
                 <p><a href="mailto:mehrajakash81@gmail.com">Email: mehrajakash81@gmail.com</a></p>
-                <p><a href="https://studywithmehraj.com">Website: studywithmehraj</a></p>
+                <p><a href="https://studywithmehraj.com">Website: studywithmehraj.com</a></p>
                 <p><a href="tel:+8801306591876">Phone: +8801306591876</a></p>
             </div>
 
@@ -145,12 +157,12 @@
             <!--Personal section start-->
             <section id="personal-section">
                 <div class="personal-contain">
-                    <div class="personal-left">
+                    <div class="left">
                         <h1>Personal Information</h1>
         
                        </div>
        
-                       <div class="personal-right">
+                       <div class="right">
                        <Address>Address: Uttara, Dhaka, Bangladesh</Address>
                        <p>Sex: Male</p>
                        <p>Date of Birth: 28 December 2002</p>
@@ -172,27 +184,101 @@
             <!--work section start-->
             <section id="work-section">
                 <div class="work-contain">
-                    <div class="work-left">
+                    <div class="left">
                         <h1>Work experience</h1>
         
-                       </div>
+                    </div>
        
-                       <div class="work-right">
+                    <div class="right">
+                        <h3 style="color:blueviolet">Lecturer of Information and Communication Techonoloy</h3>
+                        <h5 style="color:blueviolet">2020-2022</h5>
                       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, fugiat magnam!
                          Consequuntur accusamus dolor nihil 
                          cupiditate omnis quaerat similique neque sunt ea numquam quod a
                           blanditiis dolore iste quam distinctio quisquam in, corrupti amet itaque illo!
                            Quae delectus commodi aperiam laboriosam, quia alias quo dolor ullam fuga iure.
                             Eum, perspiciatis.</p>
-                     
-                       </div>
-       
+                            <br/><br/>
+
+                            <h3 style="color:blueviolet">Professor of Computer Science and Engineering</h3>
+                            <h5 style="color:blueviolet">2023-2024</h5>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore, expedita quia, amet unde molestias autem consectetur minima quibusdam nostrum hic a quisquam atque ut quos optio illo fugit cupiditate facilis nobis deserunt asperiores. Qui error, maiores aspernatur tempora accusamus ipsa. Mollitia ex voluptatum consequuntur atque reprehenderit tenetur aliquid, repellendus delectus dicta perferendis libero et aperiam minus quibusdam natus inventore omnis possimus error? Vitae eos a sunt quas eum laudantium maxime amet architecto iure hic officiis aperiam provident, itaque explicabo quia totam rerum saepe quisquam dignissimos? Error, suscipit quae? Laborum repudiandae est eligendi recusandae maxime. Dolores laborum quibusdam culpa, molestiae sed reiciendis dicta aperiam magni qui accusantium, sint pariatur ex nemo fuga officia? Alias excepturi recusandae consectetur, illum hic, optio, laboriosam odit tenetur maiores reprehenderit aperiam. Natus aperiam officia magnam iusto tempora velit neque veritatis. Odit ad numquam provident nemo enim.
+                            </p>
+                    </div>
+
                 </div>
-              
             </section>
             <!--Work section End-->
 
             <!--clear div-->
+            <div class="div-clear"></div>
+            <div class="common-hr"></div>
+ 
+            <!--Skills section start-->
+            <section id="skills-section">
+                <div class="skills-contain">
+                    <div class="left">
+                        <h1>Key Skills</h1>
+        
+                    </div>
+       
+                    <div class="right">
+                        <h3 style="color:blueviolet">Communication Skills</h3>
+                        <ul>
+                            <li>IELTS 7(Speaking-8.5, Listening-8, Writing-6, Reading-6)</li>
+                            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, fugiat magnam!
+                                Consequuntur accusamus dolor nihil</li>
+                             <li>Quae delectus commodi aperiam laboriosam, quia alias quo dolor ullam fuga iure.
+                                Eum, perspiciatis.</li>   
+                        </ul>
+                        
+                     
+                            <br/><br/>
+
+                            <h3 style="color:blueviolet">Job related skills</h3>
+                            <ul>
+                                <li>Good command of Android development,managing and maintenance</li>
+                                <li>Excellence command over C,C++,Java,Phython,HTML,CSS,JavaScript etc</li>
+                                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore, expedita quia, amet unde molestias autem consectetur minima quibusdam nostrum</li>
+                            </ul>
+                            
+                     </div>
+
+                </div>
+            </section>
+            <!--Skills section end-->
+            <div class="div-clear"></div>
+            <div class="common-hr"></div>
+
+            <!--Education Start-->
+            <sectoin id="education-section">
+                <div class="education-contain">
+                    <div class="left">
+                        <h2>Education</h2>
+                    </div>
+                    <div class="right">
+
+
+                        <div class="left2">
+                            <h3 style="color:blueviolet">HSC in Science</h3>
+                            <h5>2019-2021 | GPA: 5.00 (out of 5.00)</h5>
+                            <p>Chandpur Govt. College<br/>
+                            Chandpur Sadar,Chandpur,Bangladesh<br/>
+                            <a href="https://chandpurcollege.edu.bd">Chandpur Government College</a></p>
+                        </div>
+
+                        <div class="right2">
+                            <h3 style="color:blueviolet">B.Sc. in Computer Science and Engineering</h3>
+                            <h5>2022-Running | CGPA: 3.75(out of 4.00)</h5>
+                            <p>Chandpur Science and Technology University <br/>
+                                Chandpur Sadar,Chandpur,Bangladesh</p>
+                            <a href="https://cstu.ac.bd">Chandpur Science and Techonoloy University</a>
+                        </div>
+
+                    </div>
+                </div>
+            </sectoin>
+                <!--Education end-->
             <div class="div-clear"></div>
             <div class="common-hr"></div>
 
@@ -203,7 +289,11 @@
 
      <!--footer start-->
         <footer>
-    
+    <div id="footer-section">
+        <div class="footer-contain">
+
+        </div>
+    </div>
         </footer>
         <!--main end-->
     </div>
