@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Menu</title>
+    <style>
+        #nav-menu{
+            
+            width: 800px;
+            height: 40px;
+            background-color: aquamarine;
+            margin: 0 auto;
+            
+        }
+        #nav-menu ul{
+           
+        }
+        #nav-menu ul li{
+            float: left;
+            margin-right: 40px;
+            list-style-type: none; /*For removing dot */
+            
+            padding: 10px;
+        }
+        #nav-menu ul li a{
+            text-decoration: none; /*For removing underline*/
+            font-size: 20px;
+            color:blue;
+        
+            padding: 5px;
+        }
+        #nav-menu ul li a:hover{
+            color: black;
+            cursor: pointer;
+            text-decoration: underline;
+            
+        }
+        .image-opacity{
+            
+            background-color:blanchedalmond;
+            
+        }
+        img{
+            width: 50%;
+            margin:0 auto;
+            opacity: .5;
+        }
+        img:hover{
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div id="nav-menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Tutorials</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+    </div>
+    <div class="image-opacity">
+        <img src="./Cox's Bazar pic.jpg" alt="">
+
+    </div>
+</body>
+</html>

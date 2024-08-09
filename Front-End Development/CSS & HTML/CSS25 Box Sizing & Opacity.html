@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Sizing and Opacity</title>
+    <style>
+        .div1{
+            
+            background-color: aquamarine;
+            width: 50%;
+            height: 300px;
+            box-sizing:border-box; /* works within constant width  */
+            border: rgb(95, 9, 153) dotted 3px;
+            
+        }
+        .div2{
+            background-color: blanchedalmond;
+            width: 50%;
+            height: 300px;
+            
+           box-sizing: border-box; 
+            padding:20px;
+            border:solid red 5px; 
+            opacity: .5; /* opacity value range 0 to 1...value<1 decreases color intensity */
+            
+        }
+        .div2:hover{
+            opacity: 1;
+        }
+        body{
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="div1">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem possimus corporis assumenda iste laborum deserunt? Dolores commodi doloribus quasi consectetur!</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur, repellendus?</p>
+    </div>
+
+    <div class="div2">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi minus architecto eum ad aliquam tempora dolor, temporibus quidem cumque, soluta, et excepturi inventore commodi non aperiam beatae asperiores reprehenderit! Obcaecati quod, quasi dolore ratione animi aliquid deserunt tempore porro numquam?</p>
+ 
+    </div>
+    
+</body>
+</html>
