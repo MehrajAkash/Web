@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow and Custom Tooltip</title>
+    <style>
+        body{
+            margin: 0 auto;
+            max-width: 300px;
+        }
+        div{
+            margin-top: 50px;
+            height: 100px;
+            width: 200px;
+            padding: 5px;
+            background-color: aquamarine;
+            border: 2px solid red;
+            overflow: auto; 
+            /* overflow: scroll;
+             overflow: hidden; 
+             */
+        }
+
+        .tooltip{
+            position: relative;
+        }
+        .tooltip .tooltip-text{
+            visibility: hidden;
+            width:100px;
+            background-color: bisque;
+            color:blue;
+            padding: 5px;
+            position: absolute;
+            border-radius: 5px;
+            left: 70px;
+            
+            
+        }
+        .tooltip:hover .tooltip-text
+        {
+            visibility: visible;
+        }
+
+    </style>
+
+
+</head>
+<body>
+    <div>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, a? <br/>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus aliquid nulla amet deleniti id aliquam iste, iusto explicabo minima magnam.
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis accusantium provident repellat cupiditate in qui quo dicta totam deleniti vitae.</p>
+     
+    </div>
+    <br>
+    <a href="#" class="tooltip">
+        Facebook
+        <span class="tooltip-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, aut.</span>
+    </a>
+
+
+
+</body>
+</html>

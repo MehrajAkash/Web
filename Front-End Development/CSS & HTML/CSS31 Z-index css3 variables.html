@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-index and css variable</title>
+    <style>
+        :root{
+            --color: green;
+            --bcolor: rgb(221, 72, 201);
+        }
+        div{
+            height: 150px;
+            width:250px;
+            background-color: rgb(224, 140, 29); /* this bg color is not appeared because div1,div2,div3 position is absolute and their bg color is different */
+        }
+        #div1{
+            background: var(--bcolor,red); /* if varible '-bcolor' doesnot work then red color will be applied in the div */
+            position: absolute; /* 'absolute' value work under another div */
+            z-index: 1;  /* this div is overflowed on another div */
+        }
+        #div2{
+            background-color: var(--color); /* '--color' is the variable name */
+            position: absolute;     /* 'absolute' value work under another div */
+            left: 100px;
+            top: 100px;
+            z-index: -2; /* if z-index become greater than 1 then this div will be affeared on top(div1) */
+        }
+        .div3{
+            background: var(--bcolor);
+            position: absolute; /* 'absolute' value work under another div */
+            top: 200px;
+            z-index: -3;  /* this div is overflowed on another div */
+        }
+
+        @media screen and (max-width: 700px) {
+            :root{
+                --color: aqua;
+                --bcolor: yellowgreen;
+            }
+            
+        }
+
+    </style>
+
+</head>
+<body>
+    <div id="div1"></div>
+    <div id="div2"></div>
+    <div class="div3"></div>
+</body>
+</html>
