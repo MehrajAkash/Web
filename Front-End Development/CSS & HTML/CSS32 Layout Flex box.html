@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box layout design</title>
+    <style>
+        .flex-container{
+            border: 1px solid red;
+            display: flex;
+            background: aqua;
+            
+            justify-content: space-around; /* set distance around elements automatically */
+          /*  justify-content:space-between;  set distance between elements automatically */
+          /*  justify-content: center;  Uses to centralize elements */
+        /*  justify-content: flex-end;   elements show from right-side */
+         /*  justify-content: flex-start;   elements show from left-side */
+            flex-wrap: wrap; 
+          /* flex-flow: wrap row; */
+            flex-direction: row-reverse;  /* elements start from right-side along row */
+    /*      flex-direction: column-reverse;   elements start from bottom along columns */
+            /* column-reverse */
+            height: 300px; 
+        /*  align-items: center; */
+            align-items: flex-start;  /* elements start from top of the screen */
+            
+        }
+        .flex-container > div{
+            background-color: blanchedalmond;
+            margin: 10px;
+            padding: 20px;
+           font-size: 30px;
+            text-align: center;     
+           
+        }
+
+        .out-div{
+            justify-content: center;
+            align-items: center;
+        }
+        #different-div{
+            
+            background-color: aquamarine;
+            border: 2px solid blue;
+            margin-top: 10px;
+            
+            text-align: center;
+           
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <div class="flex-container">
+        <div class="div1" style="order: 2; flex-basis: 150px;"> <!--div size is customized by inline CSS-->
+            div1
+        </div>
+        <div class="div2">
+            div2
+        </div>
+        <div class="div3" style="order:1;">  <!--order 1 means it will be printed first--> 
+            div3
+        </div>
+        <div class="div4">
+            div4
+        </div>
+        <div class="div5">
+            div5
+        </div>
+        <div class="div6">
+            div6
+        </div>
+        <div class="div7" >
+            div7
+        </div>
+        <div class="div8">
+            div8
+        </div>
+
+
+
+    </div> 
+</header>
+
+<main class="out-div">
+    <div id="different-div">
+        different-div
+    </div>
+</main>
+
+
+
+    
+</body>
+</html>
