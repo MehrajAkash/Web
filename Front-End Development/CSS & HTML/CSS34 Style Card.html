@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Style</title>
+    <style>
+        body{
+            /* margin: 0 auto; */
+            margin: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .card{
+            width: 300px;
+            margin:10px;
+            padding: 0;
+            box-sizing: border-box;
+            box-shadow: 5px 5px 10px turquoise;
+            margin-left: 20px;
+            
+        }
+        .image{
+            width: 100%;
+            
+            position:relative;
+            top:5px;
+               
+        }
+        .card-body{
+            background: rgb(99, 121, 219);
+            padding: 10px;
+
+        }
+
+        .card-body .card-title{
+            color:rgb(10, 221, 10);
+            font-size: 1.5rem;
+            text-shadow: 2px 2px  rgb(204, 9, 188);
+            
+            font-style: italic;
+            text-align: center;
+            
+            
+        }
+        .card-body .card-description{
+            text-align: justify;/* Sentences length are same */
+            line-height: 1.5;
+            margin-top: 10px;
+        }
+        .card:hover{
+            
+            border-radius: 5px;
+            box-shadow: 5px 5px 10px rgb(230, 98, 46);
+        }
+        .card-body .card-description:hover{
+            color: rgb(147, 221, 10);
+        }
+
+    </style>
+</head>
+<body>
+
+    <!--Card 01 Start-->
+    <div class="card">
+
+       <img class="image" src="./Image,Video,etc/Image/World Map.jpg" alt="">
+     
+        <div class="card-body">
+            <div class="card-title">
+                Python Programming
+            </div>
+
+            <div class="card-description">
+                 Laborum id reprehenderit aut sed ducimus reiciendis vitae provident, at quas molestias. Obcaecati repellat maxime consequuntur praesentium sunt, tempore earum totam dolorem reiciendis nisi voluptas quaerat aspernatur id amet accusamus libero facilis sequi, omnis unde harum veritatis aperiam? Harum modi consequatur id illo cupiditate vero et temporibus autem recusandae molestiae odio suscipit sequi eveniet, fugit quia expedita velit, est consequuntur ex sed laudantium ut fuga in? Minus nobis laboriosam, temporibus optio dolore libero voluptate aliquid ratione et magni fugiat beatae dolorem eos veritatis modi. Sed, et!
+
+            </div>
+        </div>
+
+    </div>
+   <!--Card 01 End-->
+
+
+     <!--Card 02 Start-->
+    <div class="card">
+
+        <img class="image" src="./Image,Video,etc/Image/World Map.jpg" alt="">
+      
+         <div class="card-body">
+             <div class="card-title">
+                 Python Programming
+             </div>
+ 
+             <div class="card-description">
+                  Laborum id reprehenderit aut sed ducimus reiciendis vitae provident, at quas molestias. Obcaecati repellat maxime consequuntur praesentium sunt, tempore earum totam dolorem reiciendis nisi voluptas quaerat aspernatur id amet accusamus libero facilis sequi, omnis unde harum veritatis aperiam? Harum modi consequatur id illo cupiditate vero et temporibus autem recusandae molestiae odio suscipit sequi eveniet, fugit quia expedita velit, est consequuntur ex sed laudantium ut fuga in? Minus nobis laboriosam, temporibus optio dolore libero voluptate aliquid ratione et magni fugiat beatae dolorem eos veritatis modi. Sed, et!
+ 
+             </div>
+         </div>
+ 
+     </div>
+      <!--Card 02 End-->
+    
+</body>
+</html>
