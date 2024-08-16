@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+
+    <style>
+        /* 1st new table start */
+        .grid-container{
+            margin: 0 auto;
+          
+            max-width: 800px;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto auto auto;
+            
+            
+        }
+        .grid-container > div{
+            background-color: aquamarine;
+            border: 1px solid blueviolet;
+            text-align: center;
+            padding: 20px;
+            font-size: 1.5rem;
+        }
+        .item1{
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+        .item2{
+            grid-row: 2/4;
+        }
+        .item3{
+            
+        }
+        .item5{
+            grid-column: 2 / 4;
+        }
+
+
+
+
+/* 2nd new table start */
+        .element1{
+            grid-area: hr;
+        }
+        .element2{grid-area: mu;}
+        .element3{grid-area: mn}
+        .element4{grid-area: ae}
+        .element5{grid-area: fr}
+
+
+        .grid-container2{
+            position: relative;
+            top: 50px;
+            margin: 0 auto;
+            max-width: 600px;
+            display: grid;
+            grid-template-areas: 
+                'hr hr hr hr hr hr'
+                'mu mn mn mn ae ae'
+                'mu fr fr fr fr fr'
+                ;
+        }
+        .grid-container2 > div{
+            background-color: antiquewhite;
+            border: 1px solid green;
+            border-radius: 5px;
+            font-size: 1.5rem;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+
+</head>
+<body>
+  <!--/* 1st new table start */-->
+    <div class="grid-container">
+        <div class="item1">Header</div>
+        <div class="item2">Menu</div>
+        <div class="item3">Main</div>
+        <div class="item4">Aside</div>
+        <div class="item5">Footer</div>
+    
+
+    </div>   
+
+
+    <!--2nd new table start -->
+    <div class="grid-container2">
+        <div class= "element1">Header</div>
+        <div class="element2">Menu</div>
+        <div class="element3">Main</div>
+        <div class="element4">Aside</div>
+        <div class="element5">Footer</div>
+    </div>
+</body>
+</html>

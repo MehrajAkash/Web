@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout design</title>
+    <style>
+        .grid-container{
+            display: grid; /* for making row,column grid keyword is must be used */
+            grid-template-columns: 50px auto auto; /* 3 auto means number of columns is 3 */
+            grid-template-rows: 100px 50px; /* 1st row height is 100px and second row's height is 50px */
+            grid-column-gap: 10px;
+            grid-row-gap: 5px;
+            background-color: rgb(83, 147, 150, 0.5); /* 0.5 is opacity value */
+         /* grid-gap: 5px 10px;   here 5px is row gap and 10px column gap */
+            
+            justify-content: end;
+            
+          /*  align-content: center; */
+        }
+        .grid-container > div{
+            background-color: bisque;
+            border: 2px solid green;
+            text-align: center;
+            padding: 5px;
+        }
+        .grid-container .item1{
+            grid-column-start: 1; /* column starts from line number 1 */
+            grid-column-end: 3;  /* column ends at line number 3 */
+           
+        
+        }
+       .item5{
+            grid-row-start: 2;
+            grid-row-end: 4;
+         /*   grid-row: 2 / 4;  that means row starts from number 2 line and ends at line number 4 */
+
+        }  
+        .item12{
+            grid-column: 1 / 4; /* Column starts from 1 and ends at line number 4 */
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div>3</div>
+        <div>4</div>
+        <div class="item5">5</div>
+        <div class="item6">6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div class="item12">12</div>
+        <div>13</div>
+        <div>14</div>
+        <div>15</div>
+
+    </div>
+    
+
+</body>
+</html>
