@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Last Part</title>
+    <style>
+        *{
+            margin: 0 auto;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: aquamarine;
+            height: 100vh;
+            
+            display: grid;
+            grid-template-rows: min-content auto min-content;
+            grid-template-areas: 
+            'h'
+            'm'
+            'm'
+            'm'
+            'f'
+
+            ;
+          
+        }
+        header{
+          
+            grid-area: h;
+            background-color:pink;
+            width: 100%;
+            height: 100%;
+            
+            border: 2px solid red;
+            text-align: center;
+        }
+        main{
+            margin-top: 5px;
+            margin-bottom: 5px;
+            grid-area: m;
+            width: 100%;
+            height: 100%;
+            background-color: bisque;
+            border: 2px solid green;
+            justify-content: center;
+            align-items: center;
+        }
+        article{
+           
+            display: grid;
+            grid-template-areas: 
+            's1 a1'
+            's2 a2'
+            's3 .'
+            ;
+            height: 100%;
+            padding: 10px;
+        }
+       
+       article > section{
+          
+            border: 2px solid yellowgreen;
+           
+            
+            
+        }
+        article > aside{
+           width:96%;
+        }
+        article > *{
+            text-align: center;
+            position: relative;
+            
+            margin: 10px 10px;
+            background-color: aqua;
+        }
+        #sec1{
+            grid-area: s1;
+        }
+        #sec2{
+            grid-area: s2;
+        }
+        #sec3{
+            grid-area: s3;
+        }
+
+
+        aside{
+            border: 2px solid rgba(204, 156, 25, 0.815);
+            width: 100%;
+        }
+        #aside1{
+            grid-area: a1;
+        }
+        #aside2{
+            grid-area: a2;
+        }
+        
+        footer{
+            margin-top: 15px;
+            margin-bottom: 15px;
+            grid-area: f;
+            width: 100%;
+            height: 100%;
+            background-color: blueviolet;
+            border: 2px solid blue;
+            display: grid;
+            grid-template-areas: 
+              'n1 n2'
+            ;
+        }
+        #nav1{
+            grid-area: n1;
+        }
+        #nav2{
+            grid-area: n2;
+        }
+        footer > nav{
+            border: 2px solid red;
+            width:100%;
+            text-align: center;
+        }
+
+
+
+        @media screen and(min-width: 50%) {
+         article{
+           
+           display: grid;
+           grid-template-areas: 
+           's1'
+           's2'
+           's3'
+           'a1'
+           'a2'
+           '.'
+           ;
+           height: 100%;
+           padding: 10px;
+         }
+
+         footer{
+            grid-area: f;
+            width: 100%;
+            height: 100%;
+          
+            background-color: rgb(43, 226, 98);
+            border: 2px solid blue;
+            display: grid;
+            grid-template-areas: 
+              'n1'  
+              'n2'
+            ;
+        }
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>Header nav</nav>
+    </header>
+
+    <main>
+        <article>
+            <section id="sec1">Section 1</section>
+            <section id="sec2">Section 2</section>
+            <section id="sec3">Section 3</section>
+
+            <aside id="aside1">Aside 1</aside>
+            <aside id="aside2">Aside 2</aside>
+        </article>
+    </main>
+
+    <footer>
+        <nav id="nav1"> nav 1 </nav>
+        <nav id="nav2"> nav 2 </nav>
+    </footer>
+    
+</body>
+</html>

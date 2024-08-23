@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container{
+            display:grid;
+         grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
+            
+        /*  
+               grid-template-columns: 2fr 1fr 1fr 1fr;
+               grid-template-columns: auto auto auto auto auto;
+               grid-template-columns: repeat(4,25%);
+               grid-template-columns: repeat(4, 1fr)  means- 4 columns where every columns takes 25% of the screen.
+
+
+        */
+            
+        }
+        .grid-container > div{
+            margin-left: 10px;
+            border: 2px solid green;
+            border-radius: 10%;
+            padding: 5px;
+        }
+
+
+
+        /*** grid2 ****/
+        .p1{
+            grid-area: pr1;
+        }
+        .p2{
+            grid-area: pr2;
+        }
+        .p1{
+            grid-area: pr3;
+        }
+        .p1{
+            grid-area: pr4;
+        }
+        .p1{
+            grid-area: pr5;
+        }
+        .grid-container2{
+            display: grid;
+            position: relative;
+            top: 10px;
+            
+            grid-template-areas: 
+             'pr1 pr1 pr1 pr1'
+             'pr4 pr5 pr5 pr5'
+            ;
+        }
+        .grid-container2 > div{
+            border: 1px solid red;
+            margin-left: 5px;
+            border-radius: 5px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="grid-container">
+        <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam ullam vero tempora eius, omnis dignissimos incidunt vel magnam nemo blanditiis?</p></div>
+        <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam ullam vero tempora eius, omnis dignissimos incidunt vel magnam nemo blanditiis?</p></div>
+        <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam ullam vero tempora eius, omnis dignissimos incidunt vel magnam nemo blanditiis?</p></div>
+        <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam ullam vero tempora eius, omnis dignissimos incidunt vel magnam nemo blanditiis?</p></div>
+        <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam ullam vero tempora eius, omnis dignissimos incidunt vel magnam nemo blanditiis?</p></div>
+    
+    </div>
+
+    <div class="grid-container2">
+        <div><p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam ullam vero tempora eius, omnis dignissimos incidunt vel magnam nemo blanditiis?</p></div>
+        <div><p class="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam ullam vero tempora eius, omnis dignissimos incidunt vel magnam nemo blanditiis?</p></div>
+        <div><p class="p3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam ullam vero tempora eius, omnis dignissimos incidunt vel magnam nemo blanditiis?</p></div>
+        <div><p class="p4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam ullam vero tempora eius, omnis dignissimos incidunt vel magnam nemo blanditiis?</p></div>
+        <div><p class="p5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam ullam vero tempora eius, omnis dignissimos incidunt vel magnam nemo blanditiis?</p></div>
+    
+    
+    </div>
+
+</body>
+</html>
