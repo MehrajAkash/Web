@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centering Elements</title>
+    <style>
+         body{
+            margin: 0 auto;
+         }
+       
+        .main{
+            background-color: teal;
+            text-align: center;
+          
+        }
+
+
+        /** How to center elements **/
+        .desc{
+            background-color: aquamarine;
+            text-align: justify;
+            max-width: 400px;     
+        }
+        .main2{
+            background-color: rgb(200, 167, 231);
+            height: 500px;
+
+            /** Centering items following 3 steps **/
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+       
+
+
+
+
+
+/** How to center elements **/
+        .part2{
+            margin: 0 auto;
+            background-color: bisque;
+            max-width: 600px;
+            height: 600px;
+            position: relative;
+        }
+        .desc2{
+            width: 200px;
+            display: inline;
+            background-color: aquamarine;
+            text-align: justify;
+            
+        /** Centering items following 4 steps **/
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="main">
+        <h1>Bangladesh</h1>
+    </div>
+
+
+    <div class="main2">
+       
+        <p class="desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab obcaecati blanditiis, tempora perferendis quasi deleniti temporibus ex ut ullam perspiciatis necessitatibus ducimus error dolorem, reiciendis facilis aperiam quidem fugit dolores, id aut assumenda. Labore culpa corrupti quam harum est hic fugiat beatae voluptatem atque natus, esse ea ab eum dicta. Atque praesentium corrupti voluptate ipsum maiores libero qui maxime explicabo error doloremque. Hic tempore dolor doloribus in itaque. Dolore distinctio consequuntur labore. At, explicabo dignissimos beatae incidunt distinctio deserunt laudantium!</p>
+    </div>
+
+
+
+    <div class="part2">
+      <p class="desc2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam vel suscipit, omnis quas ducimus odio perspiciatis laboriosam ratione fugit a?</p>
+   
+    </div>
+    
+</body>
+</html>
