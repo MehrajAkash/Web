@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linkable icon</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"> <!--fontawesome cdn link-->
+
+    <style>
+        .social-media{
+            background-color: gray;
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .btn{
+            border: none;
+            padding: 10px 20px;
+            font-size: 2rem;
+            border-radius: 5px;
+            color: teal;
+        }
+        .btn:hover{
+            background-color: aquamarine;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="social-media">
+         <!--<i class="fa-brands fa-facebook" style="color:rgb(18, 94, 182);"> </i>  this link collected from fontawesome website-->
+        <button class="btn" onclick="window.open('https://www.facebook.com')"> <i class="fa-brands fa-facebook" style="color:rgb(18, 94, 182);"> </i>  </button>  <!--<i class="fa-brands fa-youtube" style="color:red;"></i>-->
+        <button class="btn" onclick="window.open('https://www.youtube.com/youtube')" class="btn request-callback"> <i class="fa-brands fa-youtube" style="color:red;"> </i> </button> <!--class="btn request-callback"  helps to create page in new window-->
+        <button class="btn" onclick="window.open('https://x.com/')" class="btn request-callback"> <i class="fa-brands fa-twitter" style="color:rgb(16, 119, 214);"></i> </button>
+
+    </div>
+    <a href="https://www.facebook.com">facebook</a>
+</body>
+</html>
