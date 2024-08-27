@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Nav Menu</title>
+
+    <style>
+        .menu{
+            background-color: cadetblue;
+            display: flex;
+            justify-content: center;
+            
+        }
+        .menu a{
+            color: white;
+            padding: 20px;
+            text-decoration: none;
+        }
+        .menu a:hover{
+            color: red;
+            
+        }
+
+        @media screen and (max-width: 600px) {
+            .menu{
+                background-color: rgb(219, 218, 163);
+                flex-direction: column;
+                
+            }
+            .menu a{
+                color: rgb(234, 233, 238);
+                padding: 20px;
+                text-decoration: none;
+                text-align: center;
+                border: 2px solid rgb(37, 199, 37);
+                margin: 10px;
+                background-color: blueviolet;
+                
+            }
+            .menu a:hover{
+               opacity:0.5;
+               color: black;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <a href="#">Home</a>
+        <a href="#">Contact</a>
+        <a href="#">Event</a>
+    </div>
+
+
+
+</body>
+</html>
