@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Property</title>
+    <style>
+        img{
+           max-width: 200px;
+            height: auto;
+            border: 4px solid;
+            
+            display: block;
+            margin: 0 auto;
+
+            border-radius: 50%;
+
+            position: relative;
+            animation-name: img-anim;
+            animation-duration: 5s;
+            animation-fill-mode:forwards;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear; /* takes equal time for 0% to 50% and 50% to 100% */
+           
+        }
+
+      /*  img:hover{
+            position: relative;
+            animation-name: img-anim;
+            animation-duration: 5s;
+            animation-fill-mode:forwards;
+            animation-iteration-count: infinite;
+        } */
+
+        @keyframes img-anim {
+            0%{  /* from{} */
+                max-width: 100px; 
+                border-color: aqua;
+                top: 0;
+                left: 0;
+            }
+            50%{
+                max-width: 300px; 
+                border-color: red;
+                top: 200px;
+                left: 200px;
+                opacity: 0.5;
+            }
+            100%{ /* to{} */
+                top: 0;
+                left:0;
+                border-color:rgb(8, 211, 42);
+                max-width: 100px;
+            }
+            
+        }
+
+    </style>
+</head>
+
+<body>
+    <img src="/Image,Video,etc/Image/Cox's Bazar pic.jpg" alt="">
+
+</body>
+</html>
