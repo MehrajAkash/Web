@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Table</title>
+    <style>
+        body{
+            background-color: rgb(137, 196, 110);
+            height: 1000px;
+        
+        }
+        caption{
+            color: rgb(199, 7, 7);
+        }
+        table{
+            border: 4px solid rgb(11, 209, 235);
+            border-collapse: collapse;
+            margin: 0 auto;
+            max-width: 80%;
+        }
+        th,td{
+            border: 2px solid rgb(75, 5, 204);
+            padding:5px;
+            
+            text-align: justify;
+            vertical-align: middle;
+        }
+        th{
+            background-color: aquamarine;
+            height: 60px;
+            padding: 0 10px;
+        }
+        .name{
+            width: 100px;
+        }
+        
+        tr:nth-child(even){
+            background-color:bisque;
+        }
+        tr:nth-child(odd){
+            background-color: gray;
+        }
+        tr:hover{
+            background-color: teal;
+            color: white;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <table>
+        <caption>Student Details</caption>
+        <tr>
+            <th>ID</th>
+            <th class="name">Name</th>
+            <th>GPA</th>
+            <th>Phone</th>
+            <th>Bio</th>
+        </tr>
+        <tr>
+            <td>101</td>
+            <td>Anisul Islam</td>
+            <td>3.5</td>
+            <td>01306595526</td>
+            <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse neque ex saepe repellendus voluptas illum repudiandae quo totam ratione magni.Est iure quis, ipsum minus distinctio maxime aperiam in sunt dicta ut aspernatur pariatur illo perspiciatis quibusdam dolore, adipisci quo molestiae tempora?</td>
+        </tr>
+        <tr>
+            <td>102</td>
+            <td>Arshad Sikdar</td>
+            <td>3.75</td>
+            <td>0257825322212</td>
+            <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt amet aliquid praesentium, natus nobis corporis, quod ipsam quo odio saepe error temporibus similique asperiores velit exercitationem dolor cupiditate rem! Quaerat!</td>
+        </tr>
+        <tr>
+            <td>103</td>
+            <td>Minhad Akram</td>
+            <td>3.1</td>
+            <td>5874558555</td>
+            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, doloribus?</td>
+        </tr>
+        <tr>
+            <td>104</td>
+            <td>Minhad Akram</td>
+            <td>3.25</td>
+            <td>85565544585</td>
+            <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos, error.Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, doloribus?</td>
+        </tr>
+
+    </table>
+    
+</body>
+</html>
