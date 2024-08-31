@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition transform</title>
+    <style>
+        .main{
+            background-color: teal;
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+
+            transition-property: width,height;
+            transition-duration: 2s;
+            transition-delay: 1s; /* After hovering it will take 1s then property will be changed */
+            transition-timing-function:ease-in-out; /*linear */
+            /* transition: width 2s height 4s ease-in-out 1s; width changing time 2s and height changing time 4s */
+
+
+        }
+
+        .main:hover{
+            width: 400px;
+            height: 600px;
+        }
+
+        h1{
+            font-size: 1rem;
+            color: white;
+
+            transition: font-size 2s;
+        }
+        h1:hover{
+            font-size: 3rem;
+        }
+
+
+        .finland{
+            margin: 0 auto;
+            height: 100px;
+            width: 100px;
+
+            z-index: 1;
+            background-color: bisque;
+
+            transition:transform 4s;
+            
+        }
+        .finland:hover{
+            
+            transform: rotate(380deg) scale(2);
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div class="main">
+        <h1>Bangladesh</h1>
+    </div>
+
+    <div class="finland">
+        <p>Finland</p>
+    </div>
+    
+</body>
+</html>
