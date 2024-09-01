@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customize List with Image</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  
+  <style>
+        .course-list{
+            background-color: rgb(211, 86, 64);
+            color: white;
+            padding: 10px;
+
+        }
+        .course-list li{
+            list-style-type: circle;
+            list-style-position: inside;
+            list-style-image: url("./Image,Video,etc/Image/tick.png"); /* image from flat icon website */ 
+
+        }
+
+/* Second subject list start ***/
+        .course-list2{
+            margin-top: 10px;
+            background-color: rgb(112, 112, 189);
+            color: white;
+            padding: 10px;
+        }
+        .course-list2 li{
+            list-style-type: none;
+            font-size: 1.5rem;
+        }
+        .course-list2 li::before{
+            content: '\f058'; /* image code from fontawesome website */
+            font-family: 'Font Awesome 5 Free';
+            font-weight: bold;
+
+            display: inline-block;
+            margin: 5px 10px;
+            font-size: 2rem; /* size of list style image */
+            color: greenyellow;
+            
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="course-list">
+        <ul>
+            <li>HTml</li>
+            <li>Css</li>
+            <li>Java Script</li>
+        </ul>
+    </div>
+
+
+    <div class="course-list2">
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JAVA Script</li>
+        </ul>
+    </div>
+    
+</body>
+</html>
