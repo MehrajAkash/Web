@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Styling</title>
+    <style>
+
+        input[type=text]{
+            width: 100%;
+            padding: 10px;
+            letter-spacing:2px;
+            font-size: 1rem;
+            box-sizing: border-box;
+            margin: 20px 0;
+
+            border-radius: 5px;
+            border: 2px dotted blue;
+            box-shadow: 2px 2px red;
+        }
+        input[type=password]{
+            width: 100%;
+        }
+
+        #search-id{
+            width: 90%;
+            font-size: 1rem;
+            letter-spacing: 2px;
+            padding: 20px 50px;
+            background: url("/Image,Video,etc/Image/loupe.png"); /* image from google font website*/
+            background-repeat: no-repeat;
+            background-position: 10px 20px; /* image moves 10px along X-axis, 20px along Y-axis */
+            background-color: bisque;
+
+            width: 100px;
+            transition: width 2s ease-in-out;
+        }
+
+        #search-id:focus{
+            background-color: aquamarine;
+            width: 80%;
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+    
+    <form action="">
+        <label for="fname">First Name</label>
+        <input type="text" placeholder="text writing" name="fname" id="fname">
+        
+
+        <label for="fname">Last Name</label>
+        <input type="text" id="lname" placeholder="last name">
+
+        <label for="pass">PassWord</label>
+        <input type="password">
+
+        <p></p>
+        <label for="">Search below</label>
+        <input type="search" id="search-id" placeholder="search here" >
+    </form>
+
+
+</body>
+</html>
