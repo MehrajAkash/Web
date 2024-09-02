@@ -8,6 +8,9 @@
       *{
         box-sizing: border-box;
       }
+      body{
+        background-color: rgba(82, 131, 221, 0.788);
+      }
       .header{
         background-color: coral;
         color:white;
@@ -20,14 +23,18 @@
         background-color: teal;
         
       }
-      .nav-menu a{
+     
+     .nav-menu a{
         color:white;
         text-decoration: none;
         font-size: 1.2rem;
         padding: 10px;
         display: block;
-        
-      }
+
+            text-align: center;
+            background-color: rgb(39, 41, 204);
+            margin: 10px;
+      } 
       .main{
         padding: 1% 5%;
         background-color: turquoise;
@@ -47,6 +54,21 @@
         font-size: 0.8rem;
       }
 
+        
+
+        [class*="col-"]{
+            width: 100%;
+        }
+         
+        
+      .nav-menu a:focus{
+        
+        color:red;
+      }
+
+
+      @media screen and (min-width:700px) {
+
         .col-1 {width: 8.33%;}
         .col-2 {width: 16.66%;}
         .col-3 {width: 25%;}
@@ -60,24 +82,35 @@
         .col-11 {width: 91.66%;}
         .col-12 {width: 100%;}
 
-      [class*="col-"]{
-        float:left;
-        padding: 10px;
-      }
-
-      .row::after{
-        content: '';
-        clear: both;
-        display: table;
-      }
-
-
-      @media screen and(min-width:800px) {
-        [class*="col-"]{
-            width: 100%;
+      
+        .nav-menu a{
+          text-align: center;
+          margin: 10px;
+          background-color: teal;
+        
         }
+
+            [class*="col-"]{
+            float:left;
+            padding: 10px;
+            }
+
+          .row::after{
+            content: '';
+            clear: both;
+            display: table;
+          }
+
+          
+          .nav-menu a:focus{
+            font-size: 1.7rem;
+            color:red;
+          }
         
       }
+
+     
+
     </style>
 
 </head>
