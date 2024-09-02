@@ -5,75 +5,122 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Grid view</title>
     <style>
-        *{
-            box-sizing: border-box;
-        }
-        body{
-            background-color: teal;
-        }
-        img{
-            width: 150px;
-            height: 160px;
-            border: 2px solid white;
-            border-radius: 50%;
-            
-        }
-        .logo{
-            text-align: center;
-        }
+      *{
+        box-sizing: border-box;
+      }
+      .header{
+        background-color: coral;
+        color:white;
+        padding: 1% 5%;
+        text-align: center;
+      }
 
-        .heading{
-            text-align: center;
-            color:white;
-        }
+      .nav-menu{
+        padding: 1% 5%;
+        background-color: teal;
+        
+      }
+      .nav-menu a{
+        color:white;
+        text-decoration: none;
+        font-size: 1.2rem;
+        padding: 10px;
+        display: block;
+        
+      }
+      .main{
+        padding: 1% 5%;
+        background-color: turquoise;
+      }
+      .aside{
+        padding: 1% 5%;
+        background-color: teal;
+        text-align: center;
+      }
+      
 
-        .menu{
-            text-align: center;
-           
-        }
-       .menu ul li{
-            padding: 10px 10px;
-            list-style-type: none;
-            font-size: larger;
-            background-color: aquamarine;
-            margin-top: 5px;
-           
-        }
-        a{
-            text-decoration: none;
-    
-        }
-       .menu ul li:hover{
-            background-color: gray;
-            color: aliceblue;
-            font-size: 25px;
-            
-        }
+      .footer{
+        background-color: black;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        font-size: 0.8rem;
+      }
 
+        .col-1 {width: 8.33%;}
+        .col-2 {width: 16.66%;}
+        .col-3 {width: 25%;}
+        .col-4 {width: 33.33%;}
+        .col-5 {width: 41.66%;}
+        .col-6 {width: 50%;}
+        .col-7 {width: 58.33%;}
+        .col-8 {width: 66.66%;}
+        .col-9 {width: 75%;}
+        .col-10 {width: 83.33%;}
+        .col-11 {width: 91.66%;}
+        .col-12 {width: 100%;}
+
+      [class*="col-"]{
+        float:left;
+        padding: 10px;
+      }
+
+      .row::after{
+        content: '';
+        clear: both;
+        display: table;
+      }
+
+
+      @media screen and(min-width:800px) {
+        [class*="col-"]{
+            width: 100%;
+        }
+        
+      }
     </style>
 
 </head>
 
 <body>
-    <div class="home-page">
-
-        <div class="logo">
-            <img src="./Image,Video,etc/Image/Logo.png" alt="">
-
-        </div>
-
-        <div class="heading">
-            <h1>Anisul Islam</h1>
-        </div>
-
-        <div class="menu">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Me</a></li>
-                <li><a href="#">Contact Me</a></li>
-            </ul>
-        </div>
-
+   
+    <div class="header">
+        <h1>Mehraj Hossain</h1>
     </div>
+
+    <div class="row">
+        <div class="nav-menu col-2">
+            <a href="#">Home</a>
+            <a href="#">Tutorial</a>
+            <a href="#">Contact</a>
+        </div>
+    
+
+        <div class="main col-6">
+            <h1>I am a Web Designer</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quae magnam voluptates ducimus esse vero facere fugiat, hic atque non.</p>
+    
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam soluta vitae esse odit tempora, nobis blanditiis laudantium hic, itaque beatae similique culpa quaerat modi! In voluptatem ducimus illo dignissimos aspernatur fugiat pariatur adipisci a porro voluptates at sit nostrum tempora dolor ab iusto veritatis ullam, nisi molestiae iste. Veritatis dignissimos molestiae, et voluptates repudiandae culpa numquam dolore officiis doloremque, asperiores quaerat non saepe labore perspiciatis, iste aut iusto suscipit quas incidunt dicta! Eius accusantium totam minus, facere ullam dicta voluptatum maxime dolore perspiciatis temporibus necessitatibus adipisci iusto dolor deserunt officiis porro sint expedita sunt. Inventore aperiam exercitationem neque a velit tempora esse assumenda maxime sit vel dicta dolores voluptatum quia, ducimus deserunt nobis adipisci, doloremque eius quisquam. Saepe nesciunt cum doloremque temporibus dicta earum exercitationem quos iusto reiciendis! Quia eaque ducimus vel autem voluptas ea commodi quis sed a similique beatae iure voluptatibus officia velit sit vero nulla voluptatum dignissimos optio, magnam, asperiores sint. Harum cum voluptatum amet doloribus impedit culpa animi ipsam, delectus sint, beatae quaerat iure ipsa eligendi? Molestias ea labore atque blanditiis suscipit expedita culpa tenetur, quidem alias, iusto autem laboriosam illum sapiente deleniti soluta rerum quis qui at, quisquam explicabo eaque aperiam. Delectus, accusamus. Non, exercitationem.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque eius laboriosam qui laudantium cupiditate officia, dolore ullam repellat voluptates aspernatur, culpa neque perferendis sit possimus totam? Ea provident sequi, itaque corporis necessitatibus accusantium suscipit voluptas, similique quod ullam eum. Qui ipsam ipsum obcaecati. Ipsa, voluptatibus maiores magnam rem eveniet placeat?</p>
+        </div>
+
+        <div class="aside col-4">
+            <h2>What do you do?</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus beatae consectetur perspiciatis laborum nobis omnis minus perferendis illum excepturi dolore.</p>
+        
+            <h2>What I love?</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem repellendus incidunt, inventore et dolor obcaecati totam culpa cum eligendi in eaque exercitationem aliquam quaerat aperiam reprehenderit quidem porro, nobis est?</p>
+        
+            <h2>What I donot do?</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam, impedit.</p>
+     
+        </div>
+    </div>
+
+    <div class="footer">
+        &copy; ipsum dolor sit amet consectetur adipisicing elit. Pariatur, eum.
+    </div>
+
 </body>
 </html>
