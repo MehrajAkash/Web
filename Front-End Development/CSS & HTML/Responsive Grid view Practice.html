@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsible Gride view practice</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background-color: rgba(102, 175, 197, 0.562);
+        }
+        .header{
+            background-color: coral;
+            color:white;
+            text-align: center;
+            padding: 10px;
+        }
+        .menu{
+            background-color: blueviolet;
+            padding: 5px;
+        }
+        .menu a{
+            color:white;
+            font-size: 1.4rem;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+            background-color: teal;
+            padding: 2% 5%;
+            margin:2% 5%;
+        }
+
+        h1,h2{
+            text-align: center;
+        }
+
+        .main{
+            background-color: teal;
+            padding: 2% 5%;
+            text-align: justify;
+            color: whitesmoke;
+            
+        }
+
+        .aside{
+            background-color: turquoise;
+            padding: 2% 5%;
+        }
+
+        .footer{
+            padding: 2% 5%;
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+
+        [class*="col-"]{
+            width: 100%;
+        }
+
+        @media screen and (min-width:700px) {
+            body{
+                margin: 0 auto;
+                max-width: 1200px;
+                padding: 10px;
+                
+            }
+
+            .col-1{width: 10%;}
+            .col-2{width: 20%;}
+            .col-3{width: 30%;}
+            .col-4{width: 40%;}
+            .col-5{width: 50%;}
+            .col-6{width: 60%;}
+            .col-7{width: 70%;}
+            .col-8{width: 80%;}
+            .col-9{width: 90%;}
+
+            [class*="col-"]{
+                float: left;
+                padding: 10px;
+            }
+
+            .row::after{
+                content: '';
+                clear: both;
+                display: table;
+            }
+
+            .menu a{
+                background-color: blueviolet;
+                text-align: left;
+                font-size: 1.2rem;
+            }
+           
+        }
+
+        .menu a:focus{
+                color: red;
+                font-size: 1.5rem;
+        }
+
+
+    </style>
+</head>
+<body>
+  
+    <div class="header">
+        <h1>Mehraj Hossain Akash</h1>
+    </div>
+  
+    <div class="row">
+
+        <div class="menu col-2">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Menu</a>
+            <a href="#">Our Vision</a>
+        </div>
+
+        <div class="main col-5">
+            <h1>About a Web Designer</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, omnis. Esse vitae, reiciendis, dignissimos dicta laudantium unde nostrum minima dolorem suscipit quia quod error corporis nihil. Labore eos veniam porro necessitatibus ullam vero, rerum culpa dolor consequuntur? Officia, tempore assumenda.</p>
+       
+            <h2>How to become a Web Designer??</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt molestiae voluptatem ipsum quas dolore? Odit beatae, enim corrupti consectetur soluta dolore veritatis culpa atque dicta accusantium, velit nisi quasi optio voluptatem non, nostrum aliquid ratione possimus mollitia officia deserunt aperiam! Sit neque suscipit ut consequatur perferendis! Ipsam qui provident, laboriosam sit ut quis hic laudantium dolores, a nulla repellat saepe. Saepe molestias et odit incidunt? Cumque, modi dolor repudiandae voluptas corporis quaerat iure asperiores numquam aliquam, illum obcaecati, deserunt eveniet!</p>
+       
+            <h2>Steps to Become a Web Designer</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit velit repellendus, vero delectus tempore corrupti hic temporibus quaerat. Accusamus deleniti explicabo culpa laboriosam ex, nihil ipsa, molestias necessitatibus beatae dolor totam quam expedita blanditiis hic incidunt esse est sed non eaque libero quae similique perferendis? Tempora a repellendus minus harum? Molestiae in ex perferendis, reprehenderit totam repudiandae autem quisquam eius neque optio, alias ea accusantium excepturi, nesciunt cupiditate! Voluptatum pariatur nam impedit recusandae? Facere, alias voluptate aliquam quis omnis modi! Reiciendis veniam inventore, harum est, aliquam dignissimos molestias sint autem incidunt voluptatibus consequatur quae at ipsum ratione quas laudantium nulla?</p>
+            
+        </div>
+
+        <div class="aside col-3">
+            <h1>Are Web Design and Web Develop same??</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur fuga earum repellendus natus asperiores officiis beatae laudantium expedita! Odio error ad impedit laborum? Quae ducimus doloremque odit soluta possimus eaque assumenda itaque rerum laborum temporibus nihil tempore nesciunt ratione alias molestiae minus, quod ullam omnis perspiciatis distinctio repellat ipsa! Accusamus est illo harum labore aliquam? Explicabo magni facere voluptatum expedita?</p>
+     
+            <h2>Future prospects of Web Developer</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas, temporibus quis beatae consequatur voluptatibus quidem suscipit saepe eum odio minima accusamus ab odit? Labore dicta doloribus amet tempora, quod, adipisci quo, voluptatibus velit ea et optio blanditiis est consectetur! Expedita ratione assumenda sed asperiores commodi mollitia temporibus dolores at aperiam.</p>
+     
+        </div>
+
+    </div>
+
+    <div class="footer">
+        &copy; Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem id corrupti eveniet nisi voluptates voluptas nemo dolorem vitae eius. Repellendus.
+    </div>
+
+</body>
+</html>

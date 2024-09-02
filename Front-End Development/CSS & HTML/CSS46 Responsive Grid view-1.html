@@ -62,15 +62,19 @@
          
         
       .nav-menu a:focus{
-        
+        font-size: 1.7rem;
         color:red;
       }
 
 
       @media screen and (min-width:700px) {
+        body{
+          margin: 0 auto;
+          max-width: 1200px;
+        }
 
         .col-1 {width: 8.33%;}
-        .col-2 {width: 16.66%;}
+        .col-2 {width: 15%;}
         .col-3 {width: 25%;}
         .col-4 {width: 33.33%;}
         .col-5 {width: 41.66%;}
@@ -83,33 +87,24 @@
         .col-12 {width: 100%;}
 
       
-        .nav-menu a{
-          text-align: center;
-          margin: 10px;
-          background-color: teal;
-        
-        }
-
-            [class*="col-"]{
+        [class*="col-"]{
             float:left;
             padding: 10px;
-            }
+        }
 
-          .row::after{
+        .row::after{
             content: '';
             clear: both;
             display: table;
           }
-
           
-          .nav-menu a:focus{
-            font-size: 1.7rem;
-            color:red;
-          }
-        
-      }
-
-     
+        .nav-menu a{
+          text-align: center;
+          margin: 10px;
+          background-color: teal;
+        }    
+  
+      }  
 
     </style>
 
@@ -129,7 +124,7 @@
         </div>
     
 
-        <div class="main col-6">
+        <div class="main col-7">
             <h1>I am a Web Designer</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quae magnam voluptates ducimus esse vero facere fugiat, hic atque non.</p>
     
@@ -138,7 +133,7 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque eius laboriosam qui laudantium cupiditate officia, dolore ullam repellat voluptates aspernatur, culpa neque perferendis sit possimus totam? Ea provident sequi, itaque corporis necessitatibus accusantium suscipit voluptas, similique quod ullam eum. Qui ipsam ipsum obcaecati. Ipsa, voluptatibus maiores magnam rem eveniet placeat?</p>
         </div>
 
-        <div class="aside col-4">
+        <div class="aside col-3">
             <h2>What do you do?</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus beatae consectetur perspiciatis laborum nobis omnis minus perferendis illum excepturi dolore.</p>
         
@@ -150,6 +145,7 @@
      
         </div>
     </div>
+
 
     <div class="footer">
         &copy; ipsum dolor sit amet consectetur adipisicing elit. Pariatur, eum.
