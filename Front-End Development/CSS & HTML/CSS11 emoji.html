@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emoji Styling</title>
+    <style>
+
+        .emo{
+            font-size: 5rem;
+            
+/** Centering the elements  ***/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+
+        .flag{
+
+        }
+
+        .Bangladesh{
+            /* Centering the Flag */ 
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .rectangle{
+            width: 200px;
+            height: 120px;
+            background-color: green;
+            position: relative;
+        }
+        .circle{
+            width:50%;
+            height: 40%;
+            background-color: red;
+            border-radius: 50%;
+
+/* centering the circle part of the flag  */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="emoji">
+        <!--emoji from https://unicode-explorer.com/emoji/two-hearts-->
+        <h1>I <span class="emo">💖</span> Bangladesh</h1>
+        <h1>I <span class="emo">💚</span> Finland</h1>
+
+    </div>
+<div class="flag">
+    <div class="Bangladesh">
+        <div class="rectangle">
+            <div class="circle">
+
+            </div>
+        </div>
+    </div>
+</div>
+    
+    
+</body>
+</html>
