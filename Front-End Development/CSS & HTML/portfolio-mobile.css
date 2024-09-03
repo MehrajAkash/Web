@@ -19,8 +19,7 @@
     font-family: "Fira Sans", sans-serif;
 }
 body{
-    background-color: aquamarine;
-    margin: 0 auto;
+   
 }
 
 img{
@@ -129,5 +128,36 @@ p{
     display: table;
     clear: both;
 }
-
 /** profile ends here  **/
+
+/** self bio starts here  **/
+
+.self{
+    background-color: turquoise;
+
+}
+.self .self-pic {
+
+    display: flex;
+    justify-content: center;
+    margin:5% auto 5% auto;
+    
+}
+.self .self-pic img{
+    width: 35%;
+    border: 2px solid blue;
+}
+
+.self .self-desc,p{
+
+    
+    text-align: center;
+    color: rgba(86, 24, 143, 0.836);
+}
+hr{
+    color:rgb(83, 16, 16);
+    font-size: 2rem;
+}
+
+
+/**self bio ends here  **/
