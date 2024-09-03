@@ -1,3 +1,5 @@
+
+/** Nav bar starts here  **/
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
 .col-3 {width: 25%;}
@@ -52,6 +54,8 @@ a{
 }
 
 .nav-menu{
+    margin-top: 3%;
+
     display: flex;
     flex-direction: column;
     text-transform: uppercase;
@@ -60,10 +64,15 @@ a{
     background-color: blue;
     border-radius: 10px;
     margin: 7px 0;
-    padding: 10px;
+    padding: 20px;
 }
 .nav-menu a:hover{
     background-color: gray;
+}
+p{
+    font-size: 1.2rem;
+    text-align: justify;
+
 }
 
 .navbar::after{
@@ -71,3 +80,29 @@ a{
     clear:both;
     display: table;
 }
+/** Nav bar ends here  **/
+
+
+/** profile starts here  **/
+
+.profile{
+    padding: 130px 10px;
+    text-align: center;
+
+    position: relative;
+}
+.profile .top-weather-icon{
+    position: absolute;
+    left: 70%;
+    top: 30px;
+
+    transition: transform 2s;
+}
+.profile .top-weather-icon:hover{
+    transform: rotate(360deg);
+    
+}
+
+
+
+/** profile ends here  **/
