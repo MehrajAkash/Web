@@ -93,7 +93,7 @@ p{
 }
 .profile .top-weather-icon{
     position: absolute;
-    left: 70%;
+    right: 7%;
     top: 30px;
 
     transition: transform 2s;
@@ -103,6 +103,31 @@ p{
     
 }
 
+.profile-desc h1{
+    font-family: 'Satisfy';
+    font-size: 3rem;
+}
+.profile-desc p{
+    opacity: .7;
+    text-align: center;
+    margin: 0 auto 30px auto;
+    width: 50%;
+}
 
+.profile .bottom-weather-icon{
+    position: absolute;
+    left: 7%;
+    bottom: 30px;
+    transition: transform 2s;
+}
+.profile .bottom-weather-icon:hover{
+    transform: rotate(360deg);
+    
+}
+.profile::after{
+    content: '';
+    display: table;
+    clear: both;
+}
 
 /** profile ends here  **/
