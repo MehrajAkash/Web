@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Menu</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0 auto;
+            max-width: 95%;
+        }
+        .menu{
+            box-sizing: border-box;
+            margin-top: 5%;
+            text-align: center;
+            background-color: teal;
+            padding: 30px;
+           
+        }
+        .menu a{
+            text-decoration: none;
+            margin: 2% 5%;
+            font-size: 1.2rem;
+            padding: 10px;
+            color:white;
+        }
+        .menu:hover{
+            background-color: turquoise;
+        }
+        .menu a:hover{
+            color: red;
+            font-size: 1.5rem;
+        }
+
+      body::after{
+        content:'The End';
+        font-size: 2rem;
+        color:blueviolet;
+
+/***Centering the items **/
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        
+      }
+
+        @media screen and (max-width: 700px) {
+            .menu a{
+                display: block;
+                background-color: rgb(7, 82, 57);
+            }
+
+            .menu::before{
+            content:'Menu';
+            font-size: 2rem;
+           }
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+    <div class="menu">
+        <a href="#">Home</a>
+        <a href="#">ABout Us</a>
+        <a href="#">Vision</a>
+        <a href="#">Message</a>
+    </div>
+
+</body>
+</html>

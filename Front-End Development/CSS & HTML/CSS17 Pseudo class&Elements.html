@@ -7,11 +7,15 @@
     <style>
         /* pseudo class :
            pseudo element ::  */
+
+           body{
+            background-color: rgb(102, 157, 207);
+           }
        a:hover{
         color:chartreuse;
        }
        a.my-link:hover{
-        color:aqua;
+        color:rgb(174, 20, 194);
        }
 
        input{
@@ -22,9 +26,12 @@
        input:hover{
         background-color: aquamarine;s
        }
-       table,td{
-        border: 1px solid blue;
-       }
+       table,td,th{
+        border: 2px solid blue;
+       }   
+        table{
+        border-collapse: collapse;
+       } 
 
        tr:nth-child(odd){
         background-color: rgb(214, 138, 204);
@@ -49,7 +56,7 @@
 
        p.e1:hover{
           background-color: rgb(4, 70, 114);
-          display:inline;
+          display:inline-block;
        }
     </style>
 </head>
@@ -61,8 +68,8 @@
     <input type="text" placeholder="Enter your name">
     <table>
         <tr>
-            <td>Name</td>
-            <td>Id</td>
+            <th>Name</th>
+            <th>Id</th>
         </tr>
         <tr>
             <td>Mehraj</td>
