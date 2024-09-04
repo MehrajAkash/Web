@@ -74,17 +74,17 @@
 /** profile ends here  **/
 
 
-/** profile ends here  **/
-hr{
-    color: white;
+/** about-me starts here  **/
+.about-me-img{
+    margin-top:100px;
 }
-.self{
-  background-color: rgb(95, 167, 149);
+.about-me-img img{
+    height: 270px;
+    width: 250px;
 }
-.self .self-desc{
+
+.about-me-desc p{
     text-align: left;
-    padding: 2%;
-
 }
 
-/** profile ends here  **/
+/** about-me ends here  **/

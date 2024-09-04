@@ -31,12 +31,29 @@ h1{
     font-size: 2rem;
     text-align: center;
 }
+h2{
+    font-size: 1.5rem;
+    text-align: center;
+    
+}
+
 a{
     color:white;
     font-size: 1.2rem;
     text-decoration: none;
 }
-
+p{
+    font-size: 1.2rem;
+    text-align: justify;
+}
+.dotted-hr{
+    border: 6px dotted white;
+    border-bottom: none;
+    margin: 20px auto;
+    width: 100px;
+}
+ 
+/* for mobile **/
 [class*="col-"]{
     width: 100%;
 }
@@ -68,11 +85,7 @@ a{
 .nav-menu a:hover{
     background-color: gray;
 }
-p{
-    font-size: 1.2rem;
-    text-align: justify;
 
-}
 
 .navbar::after{
     content: '';
@@ -130,34 +143,44 @@ p{
 }
 /** profile ends here  **/
 
-/** self bio starts here  **/
 
-.self{
+
+/** about me starts here  **/
+.about-me{
     background-color: turquoise;
-
-}
-.self .self-pic {
-
-    display: flex;
-    justify-content: center;
-    margin:5% auto 5% auto;
-    
-}
-.self .self-pic img{
-    width: 35%;
-    border: 2px solid blue;
-}
-
-.self .self-desc,p{
-
-    
+    padding: 1% 7%;
+    color: white;
     text-align: center;
-    color: rgba(86, 24, 143, 0.836);
+    
 }
-hr{
-    color:rgb(83, 16, 16);
-    font-size: 2rem;
+.about-me-img img{
+    border: 5px solid blue;
+    border-radius: 50%;
+    width: 200px;
+    height: 220px;
 }
 
+.about-me p{
+    text-align: center;
+}
+.about-me a{
+    font-size: 1.2rem;
+}
 
-/**self bio ends here  **/
+.cv-button{
+    background-color: teal;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 2%;
+    font-size: 1rem;
+    cursor:progress;
+    margin: 10px;
+}
+
+.about-me::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+/** about me ends here  **/
