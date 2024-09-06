@@ -434,3 +434,35 @@ p{
         display: table;
     }
  /* <!-- achievement-contact ends here--> */
+
+ /*footer starts from here */
+.footer{
+    background-color: black;
+    color:white;
+    padding: 20px;
+    text-align: center;
+    font-size: .8rem;
+}
+.footer-menu{
+    display: flex;
+    flex-direction: row;
+}
+.footer-menu a{
+   /* display: block; */
+    margin: 15px auto;
+    font-size: 1rem;
+}
+.footer-menu a:hover{
+   color: gray;
+}
+.symbl-love{
+    color: red;
+    font-size: 2rem;
+}
+
+.footer::after{
+    display: table;
+    clear:both;
+    content: '';
+}
+ /*footer ends here */
