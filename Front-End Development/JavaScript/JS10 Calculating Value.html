@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+  <script>
+
+    var num1 = prompt("Enter first number: ");
+    var num2 = prompt("Enter second number: ");
+
+    var sum,subtract;
+
+    sum = num1+num2; // here these numbers are added as string.
+    document.write("Addition = " + sum +"<br/>");
+
+    // numbers are converted into integer from string
+    num1 = parseInt(num1,10); 
+    num2 = parseInt(num2,10);
+
+    sum = num1 + num2;
+    document.write("Now sum is: " + sum +"<br/>");
+
+    var div = num1/num2;
+    document.write("Divide: " + div.toFixed(4) +"<br/>");
+    document.write("Divide with toPrecision: "+ div.toPrecision(2));
+  </script>
+
+</body>
+</html>

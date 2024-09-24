@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+    <script>
+
+        var text = "Bangladesh";
+        var length = text.length;
+        document.write(" Number of character: " + length);
+
+        var text = prompt(" Enter your Name: ");
+
+        document.write(" Number of character of the name: " + text.length);
+        document.write(text.charAt(2));
+        document.write(text.charAt(2));
+        document.write(text.charAt(2) + "<br/>");
+
+       text = text.toUpperCase();
+        document.write(text);
+
+        document.write(text.toLowerCase() + "<br/>");
+
+        var text1 = " Bangladesh";
+        var text2 = "is a very Beautiful Country ";
+
+        var sentence = text1.concat(text2);
+        document.write(sentence);
+
+        var country = prompt(" Enter country name: ");
+        var text = country.slice(0,4);
+        document.write("  Slice: " + text + "<br/>");
+
+
+/* ************Summary of this class************
+
+   variable.charAt(n);
+   variable.toUpperCase();
+   variable.toLowerCase();
+   variable1.concat(variable2);
+   variable.slice(n1,n2);
+ */  
+
+
+
+        var fname = prompt("First Name: ");
+        var lname = prompt("Last Name: ");
+
+        fname = fname.toUpperCase();
+        lname = lname.toLowerCase();
+
+        document.write(fname + " " + lname);
+
+        
+
+    </script>
+    
+</body>
+</html>
