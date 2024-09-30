@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+
+    <h3>JS uses names to access object properties</h3>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+
+    <script>
+        const cars=[" Toyota"," Ford",' Majda']; //single quotation can used instead of double quotation.
+        document.getElementById("demo1").innerHTML = cars;
+      //  document.getElementById("demo").innerHTML = cars[1]; output will be 'Ford' only.
+       let size = cars.length;
+       document.write("Array length: " + size + "<br/>");
+
+
+       const brand = new Array("Easy ",'b2win ','richMan ');
+       document.getElementById("demo2").innerHTML = brand;
+
+       let item = brand[1];
+       document.write("Brand item at index01: " + item +"<br/>");
+       // brand[0] = "Arvind";
+
+       const fruits = ['Banana','Orange','Apple',"Mango"];
+       document.getElementById("demo3").innerHTML = fruits.toString();
+
+        const person = new Array("john",'Doe',15,85);
+       // document.getElementById("demo4").innerHTML = person[0];
+        document.getElementById("demo4").innerHTML = person[2];
+
+        const wwe = {firstName:"John", lastName:"Cena", age:45};
+        document.getElementById("demo5").innerHTML = wwe.firstName;
+      //  document.getElementById("demo5").innerHTML = wwe.lastName;
+      //  document.getElementById("demo5").innerHTML = wwe.age;
+
+       var numbers = new Array(33,45,43,543,22);
+       var len = numbers.length;
+       document.getElementById("demo6").innerHTML = len; // len = 5;
+       document.getElementById("demo7").innerHTML = numbers[numbers.length - 1]; // Accesing last element of the array.
+
+
+    </script>
+</body>
+</html>
