@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Looping an Array</h2>
+    <p id="demo1"></p>
+
+    <h4>Car Brands</h4>
+    <p id="demo2"></p>
+
+
+    <script>
+        const fruits = ["Banana",'Orange',"Apple"];
+        let len = fruits.length;
+
+        let text = "<ul>";
+            for(let i=0;i<len;i++){
+                text += "<li>" + fruits[i] + "</li>";
+            }
+            text += "</ul>";
+            document.getElementById("demo1").innerHTML = text;
+
+
+
+        const cars = ["Toyota","Honda","Hyundai","Volkwagen"];
+        cars.push("Suzuki");
+        let clen = cars.length;
+
+        let ctext = "<ul>";
+           cars.forEach(myfunction);
+            ctext += "</ul>";
+
+            document.getElementById("demo2").innerHTML = ctext;
+
+            function myfunction(value){
+                ctext += "<li>" + value + "</li>";
+            }
+        
+    </script>
+</body>
+</html>

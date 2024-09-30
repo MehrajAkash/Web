@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Method with Button</title>
+</head>
+<body>
+    <h3>Push Method</h3>
+    <button onclick="mypush()">Apply Push</button>
+    <p id="demo1"></p>
+
+    <h3>Pop Method</h3>
+    <button onclick="mypop()">Apply Pop</button>
+    <p id="demo2"></p>
+    
+    <h3>unshift Method</h3>
+    <button onclick="myunshift()">Apply Unshift</button>
+    <p id="demo3"></p>
+
+    <h3>Shift Method</h3>
+    <button onclick="myshift()">Apply Shift</button>
+    <p id="demo4"></p>
+
+
+    <script>
+        const cars = ['Mitsubishi','Toyota','MG','Ford'];
+        document.getElementById("demo1").innerHTML = cars;
+        
+        function mypush(){
+            cars.push("Haval","Mercedez");
+            document.getElementById("demo1").innerHTML = cars;
+        }
+
+        function mypop(){
+            cars.pop();
+            document.getElementById("demo2").innerHTML = cars;
+        }
+
+        function myunshift(){
+            cars.unshift("BMW");
+            document.getElementById("demo3").innerHTML = cars;
+        }
+
+        function myshift(){
+            cars.shift();
+            document.getElementById("demo4").innerHTML = cars;
+        }
+
+      
+
+
+    </script>
+
+</body>
+</html>
