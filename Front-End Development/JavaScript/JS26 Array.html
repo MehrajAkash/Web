@@ -15,6 +15,10 @@
     <p id="demo5"></p>
     <p id="demo6"></p>
     <p id="demo7"></p>
+    <p id="demo8"></p>
+    <p id="demo9"></p>
+    <p id="demo10"></p>
+    <p id="demo11"></p>
 
     <script>
         const cars=[" Toyota"," Ford",' Majda']; //single quotation can used instead of double quotation.
@@ -47,7 +51,30 @@
        var len = numbers.length;
        document.getElementById("demo6").innerHTML = len; // len = 5;
        document.getElementById("demo7").innerHTML = numbers[numbers.length - 1]; // Accesing last element of the array.
+       
+       document.getElementById("demo8").innerHTML = typeof(numbers);
+       document.getElementById("demo9").innerHTML = " Array exists? " + Array.isArray(numbers); // returns true.
 
+
+       let x = "";
+        const myObj = {
+        name: "John",
+        age: 30,
+        cars: [
+            {name:"Ford", models:["Fiesta", "Focus", "Mustang"]},
+            {name:"BMW", models:["320", "X3", "X5"]},
+            {name:"Fiat", models:["500", "Panda"]}
+        ]
+        }
+
+        for (let i in myObj.cars) {
+        x += "<h2>" + myObj.cars[i].name + "</h2>";
+        for (let j in myObj.cars[i].models) {
+            x += myObj.cars[i].models[j] + "<br>";
+        }
+        }
+
+        document.getElementById("demo10").innerHTML = x;
 
     </script>
 </body>
