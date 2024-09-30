@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <h3>Concat Method</h3>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+    <p id="demo9"></p>
+    <p id="demo10"></p>
+    <p id="demo11"></p>
+    <p id="demo12"></p>
+    <p id="demo13"></p>
+    <p id="demo14"></p>
+    <p id="demo15"></p>
+    
+    
+
+ 
+
+
+
+    <script>
+           const fruits = ['Banana',"Orange",'Apple','Mango'];
+           document.getElementById("demo1").innerHTML = fruits.toString();
+           let fruit = fruits.at(2);
+           document.write(fruit);
+           document.write("<br>"+fruits.at(1));
+
+           // join() method
+           document.getElementById("demo2").innerHTML = fruits.join("**");
+           document.write("<br>" + fruits.join("**"));
+
+           delete fruits[0];
+           document.getElementById("demo3").innerHTML = "The first fruit is: " + fruits[0];// undefined
+
+            const girls = ['Lana',"charlotte"];
+            const boys = ['john','orton'];
+            const others = ["Abc","Bcd","Cde","Def","Efg","Fgh"];//lenght=6
+
+            const wwe = girls.concat(boys);
+            document.getElementById("demo4").innerHTML = wwe;
+
+            const wwe2 = wwe.concat("Bray",others,fruits);// concat can take more than 2 variables.
+            document.getElementById("demo5").innerHTML = wwe2;
+
+            document.getElementById("demo6").innerHTML = others.copyWithin(2,0);
+
+            const alphabet = ["Abc","Bcd","Cde","Def","Efg","Fgh"];
+            document.getElementById("demo7").innerHTML = alphabet.copyWithin(2,0,3);
+            document.getElementById("demo8").innerHTML = "Previous length was 6....now length: " + others.length;
+
+            // flatMap() method
+            const arr = [1,2,3,4,5];
+            const newarr = arr.flatMap(x=> [x,x*10]);
+            document.getElementById("demo9").innerHTML = newarr;
+
+            //splice() method
+            const items = ['Banana','Orange','Apple','Mango'];
+            items.splice(2,0,"lemon",'kiwi');// '2' means elements starting index..'0'means how many elements will be removed.....then next items will be added in array
+            document.getElementById("demo10").innerHTML = items;
+
+            const food = ["Apple",'Banana','Jack-fruit','Orange'];
+            document.getElementById("demo11").innerHTML = "Original Array: <br>" + food;
+            let removed = food.splice(2,1,"Pime",'Query');
+            document.getElementById("demo12").innerHTML = "New Array: <br>" + food;
+            document.getElementById("demo13").innerHTML = "Removed item: <br>" + removed;
+
+            const car = ['Toyota',"Nissan",'Honda','BMW',"Kia"];
+            let item = car.splice(1,2); // '1'defines where new elements should be added(spliced in)......'2' defines 2 elements should be removed.
+            document.getElementById("demo14").innerHTML = car;
+            document.getElementById("demo15").innerHTML = item;
+    </script>
+    
+</body>
+</html>
