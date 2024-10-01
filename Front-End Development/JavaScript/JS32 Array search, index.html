@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <p class="demo1"></p>
+    <p class="demo2"></p>
+    <p class="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+    <p id="demo9"></p>
+    <p id="demo10"></p>
+    <p id="demo11"></p>
+    <p id="demo12"></p>
+    <p id="demo13"></p>
+    <p id="demo14"></p>
+    <p id="demo15"></p>
+    
+</head>
+<body>
+    
+
+
+    <script>
+        const fruits = ["Apple","Orange","Apple","Mango"];
+        let position = fruits.indexOf("Apple");
+        document.getElementsByClassName("demo1")[0].innerHTML = "Apple index is:  " + position + "<br>";
+
+        document.write("lastIndexOf of Apple is: " + fruits.lastIndexOf("Apple") + "<br>");
+        document.write("Check if the element is present in array using 'array.includes('item'):  " + fruits.includes("Mango") + "<br>");
+    
+// arrayName.find();
+        const numbers = [4,6,8,34,65,11];
+        let first = numbers.find(myFunction);
+
+        document.getElementsByClassName("demo2")[0].innerHTML = "First number over 10 is: " + first + "<br>";
+
+        function myFunction(value, index, array){
+            return value>10;
+        }
+
+// arrayName.findIndex();
+        document.getElementsByClassName("demo3")[0].innerHTML = "First number index is: " + numbers.findIndex(myFunction) + "<br>";
+        function myFunction(value, index, array){
+            return value>10;
+        }
+
+        // findLast();
+        let high = numbers.findLast( x=> x > 34 );
+        document.getElementById("demo4").innerHTML = " last Highest element over 34 is: " + high + "<br>";
+        // findLastIndex();
+        document.getElementById("demo5").innerHTML = "Last element over 34 in index position is: " + numbers.findLastIndex(x=> x>34) + "<br>";
+
+
+    
+    </script>
+</body>
+</html>

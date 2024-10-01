@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <h1>splice method</h1>
+    <p id ="demo1"></p>
+    <p id ="demo2"></p>
+    <p id ="demo3"></p>
+    <p id ="demo4"></p>
+    <p id ="demo5"></p>
+    <h5>When the slice() method is given two arguments, it selects array elements from the start argument, and up to the end argument.</h5>
+    <p id ="demo6"></p>
+    <p id ="demo7"></p>
+    <p id ="demo8"></p>
+    <p id ="demo9"></p>
+    <p id ="demo10"></p>
+    <p id ="demo11"></p>
+    <p id ="demo12"></p>
+
+    
+</head>
+<body>
+
+
+
+
+    <script>
+        const fruits = ["Apple","Banana","Mango","Orange","Palm"];
+        document.getElementById("demo1").innerHTML = "Original array:  " + fruits + "<br>";
+        fruits.splice(1,2);
+        document.getElementById("demo2").innerHTML = "After splice() array:  " + fruits + "<br>";
+
+        food = ["Apple","Banana","Mango","Orange","Palm"];
+        const spliced = food.toSpliced(0,2);
+        document.getElementById("demo3").innerHTML = "After toSpliced method:  " + spliced + "<br>";
+        document.getElementById("demo4").innerHTML = "Original array:   " + food + "<br>";
+
+        const alphabet = ["A","B","C","D","E","F"];
+        const sliced = alphabet.slice(3);
+        document.getElementById("demo5").innerHTML = "After slice method:  " + sliced + "<br>";
+
+        const sliced2 = alphabet.slice(2,4);
+        document.getElementById("demo6").innerHTML = "Slice() method can take 2 parameters:  " +sliced2+ "<br>";
+
+
+
+
+    </script>
+    
+</body>
+</html>
