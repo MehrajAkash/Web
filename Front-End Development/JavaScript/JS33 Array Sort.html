@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+   
+  <p class="demo1"></p>
+  <p class="demo2"></p>
+  <p class="demo3"></p>
+  <p class="demo4"></p>
+  <p class="demo5"></p>
+  <p class="demo6"></p>
+  <p class="demo7"></p>
+  <p class="demo8"></p>
+
+  <p class="demo9"></p>
+
+  <button onclick="alphabetSort()">Alphabetically Sort</button>
+  <button onclick="numericalSort()">Numerically Sort</button>
+  <p class="demo10"></p>
+  
+  <p class="demo11"></p>
+  <p class="demo12"></p>
+
+
+    <script>
+        const fruits = ["Banana",'Apple','Orange','Mango'];
+        document.getElementsByClassName("demo1")[0].innerHTML = "Original Array: " + fruits +"<br>";
+        
+        const fruits2 = fruits.toSorted();
+        document.getElementsByClassName("demo2")[0].innerHTML = "Sorted Array: " + fruits2 + "<br>";
+
+        fruits.sort();
+        document.getElementsByClassName("demo3")[0].innerHTML = "Sorted Array: " + fruits + "<br>";
+
+        const fruits3 = fruits.toReversed();
+        document.getElementsByClassName("demo4")[0].innerHTML = "Reversed Array: " + fruits3 + "<br>";
+
+        document.getElementsByClassName("demo5")[0].innerHTML = "Original Array: " + fruits + "<br>";
+
+        fruits.reverse();
+        document.getElementsByClassName("demo6")[0].innerHTML = "Reversed Array: " + fruits + "<br>";
+
+        const points = [40,100,1,5,25,10];
+        document.getElementsByClassName("demo7")[0].innerHTML = "Original Array: " + points + "<br>";
+
+        points.sort(function(a,b){ return a-b });
+        document.getElementsByClassName("demo8")[0].innerHTML = "Sorted Array: " + points + "<br>";
+
+        numbers = [50,300,3,5,25,13];
+        document.getElementsByClassName("demo9")[0].innerHTML = "Original Number Array: " + numbers + "<br>";
+
+        function alphabetSort(){
+            numbers.sort();
+            document.getElementsByClassName("demo10")[0].innerHTML = "Alphabetically Sorted numeber: " + numbers + "<br>";
+        }
+       
+        function numericalSort(){
+            numbers.sort(function(a,b){return b-a});
+            document.getElementsByClassName("demo10")[0].innerHTML = "Numeric Sorted numeber: " + numbers + "<br>";
+        }
+
+
+
+
+    </script>
+    
+</body>
+</html>
