@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p class="demo1"></p>
+    <p class="demo2"></p>
+    <p class="demo3"></p>
+    <p class="demo4"></p>
+    <p class="demo5"></p>
+    <p class="demo6"></p>
+    <p class="demo7"></p>
+    <p class="demo8"></p>
+
+    <script>
+
+        const numbers = [45,4,23,16,33];
+        let txt =" ";
+        numbers.forEach(myfunction);
+
+        document.getElementsByClassName("demo1")[0].innerHTML = txt;
+
+        function myfunction(value, index, array){
+            txt += value + "<br>";
+        }
+
+
+        const numbers2 = [45,4,23,16,33];
+        const numbers3 = numbers2.map(function2);
+
+        document.getElementsByClassName("demo2")[0].innerHTML = numbers3;
+        function function2(value){
+            return value*2;
+        }
+
+
+        const myArr = [1,3,5,7];
+        const newArr = myArr.flatMap( x => [x, x * 10]);
+        document.getElementsByClassName("demo3")[0].innerHTML = newArr;
+
+        const newNumber = [65,23,7,10,34];
+        const newNumber2 = newNumber.filter(function3);
+        document.getElementsByClassName("demo4")[0].innerHTML = "Value greater than 20 : " + newNumber2;
+
+        function function3(value){
+            return value > 20;
+        }
+
+    </script>
+</body>
+</html>
