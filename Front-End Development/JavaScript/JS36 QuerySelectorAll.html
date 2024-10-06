@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <h3 class="demo">This heading 3</h3>
+    <p class="demo">A paragraph</p>
+    <span class="demo">This is under span tag</span>
+
+    <script>
+
+        const nodelist = document.querySelectorAll(".demo");
+        //const nodelist = document.querySelectorAll("p");
+        //const nodelist = document.querySelectorAll("a[target]");
+        for(let i=0;i<nodelist.length;i++){
+            nodelist[i].style.backgroundColor = "yellowgreen";
+        }
+        nodelist[1].style.backgroundColor = "aqua";
+ 
+        var length = nodelist.length;
+        document.write("<br>" + "Length: " + length);
+
+
+    </script>
+
+</body>
+</html>

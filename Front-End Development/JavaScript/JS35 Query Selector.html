@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+      div{
+        border: 2px blueviolet solid;
+        margin-top: 5px;
+        padding: 10px;
+      }
+
+      a[target]{
+          background-color: yellowgreen;
+      }
+
+    </style>
+
+</head>
+<body>
+
+    <p class="example">This is paragraph 1</p>
+    <p class="example">This is paragraph 2</p>
+    <h3 class="example3">This is paragraph 3</h3>
+    <p class="example3">This is paragraph 3</p>
+    <div id="demo"><p>This is id</p></div>
+
+    <div>
+        <h3>This is under div > h3 </h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, eligendi.</p>
+    </div>
+    <div>
+        <h2>This is div > h2</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim, autem.</p>
+    </div>
+<p></p>
+    <button onclick="Myfunction()">Try it</button>
+
+    <h2>target attribute</h2>
+    <a href="https://www.w3schools.com" target="_blank">w3schools</a>
+    <a href="http://www.wikipedia.org" target="_top">wikipedia</a>
+    <a href="http://www.disney.com"> disney </a>
+
+    <script>
+        document.querySelector("p").style.backgroundColor = "green";  
+        document.querySelector(".example3").style.backgroundColor = "red";
+        document.querySelector("p.example3").style.backgroundColor = "yellow";
+        document.querySelector("#demo").innerHTML = "Hello from id";
+
+        function Myfunction(){
+            var x = document.querySelector("div > p");
+            x.style.backgroundColor = "aqua";
+        }
+
+        document.querySelector("a[target]").style.border = "5px solid blue";
+        
+
+    </script>
+    
+</body>
+</html>
