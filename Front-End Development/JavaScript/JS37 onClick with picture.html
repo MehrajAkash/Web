@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button id="team" onclick="team()">Team Work</button>
+    <button id="melkhum" onclick="melkhum()">Melkhum</button>
+    <p></p>
+    <img id="imgId" src="#" alt="" width="300" height="400">
+    
+    <script>
+        const imgvar = document.querySelectorAll("img")[0];
+
+        function team(){
+            imgvar.src = "./Team Work.jpg";
+        }
+        function melkhum(){
+            imgvar.src = "./Melkhum pic.jpg";
+        }
+
+    </script>
+</body>
+</html>

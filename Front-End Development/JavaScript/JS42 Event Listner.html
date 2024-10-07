@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .my-style{
+            font-size: 3rem;
+            color: blueviolet;
+            
+        }
+    </style>
+
+</head>
+<body>
+    
+    <button>Click Me</button>
+    <h4>From Heading One</h4>
+
+
+    <script>
+        // addEventListener();
+        document.querySelector("button").addEventListener("click",myfunction);
+        function myfunction(){
+            alert("Hello world");
+        }
+      var myvar = document.querySelector("button");
+      myvar.addEventListener("click",function(){   // anynomous function
+            alert("I am from Bangladesh.");
+        });
+
+        var head = document.querySelector("h4");
+
+        head.addEventListener("mouseover", function(){
+            head.classList.add("my-style");
+        });
+        head.addEventListener("mouseout", function(){
+            head.classList.remove("my-style");
+        });
+
+    </script>
+    
+</body>
+</html>

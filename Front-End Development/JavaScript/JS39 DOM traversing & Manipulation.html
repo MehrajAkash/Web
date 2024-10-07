@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <ol class="students-list">
+        <li class="student-a">Student A</li>
+        <li class="student-b">Student B</li>
+        <li class="student-c">Student C</li>
+
+    </ol>
+
+
+    <script>
+/* 1. Downwards 
+        1. querySelector() / querySelectorAll();
+        2. children;
+   2. Upwards
+        1. parentElement
+   3. Sideways
+        1. nextElementSibling / previousElementSibling
+        2. parentElement + children + index
+*/        
+        const studentsList = document.querySelector(".students-list");
+        const studentA = studentsList.querySelector(".student-a").innerHTML = "Student A prime";
+        const studentB = studentsList.children[1].innerHTML = "Student B prime";
+
+        const studentA2 = document.querySelector("li"); // first li select by default
+        const studentsList2 = studentA2.parentElement;
+
+        const studentB2 = document.querySelectorAll("li")[1];
+        const studentC = studentB2.nextElementSibling.innerHTML = "Student C nextElementSibling.";
+    //  studentB2.previousElementSibling.innerHTML = " jdlhglksdf";
+
+    </script>
+</body>
+</html>

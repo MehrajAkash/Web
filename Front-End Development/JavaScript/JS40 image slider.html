@@ -35,18 +35,14 @@
 
         var count = 0;
         function next(){
-            count++;
+                  count++;
                 if(count>=photos.length){
                     count=0;
                     img.src = photos[count];
                 }
-                else{
-                   
+                else{ 
                     img.src = photos[count];
-                }
-                
-            
-          
+                }    
         }
         function prev(){
             count--;
@@ -55,9 +51,7 @@
                 img.src = photos[count];
             }
            else{
-           
             img.src = photos[count];
-          
            }
            
         }

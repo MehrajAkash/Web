@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .my-style{
+
+        }
+    </style>
+
+</head>
+<body>
+    <h1>You have not clicked any button yet.</h1>
+
+    <button class="mybutton">button 1</button>
+    <button class="mybutton">button 2</button>
+    <button class="mybutton">button 3</button>
+    <button class="mybutton">button 4</button>
+
+
+    <script>
+        var classes = document.querySelectorAll(".mybutton");
+        
+        for(var i=0; i<classes.length; i++){ 
+             var doc = document.querySelectorAll(".mybutton")[i];
+             doc.addEventListener("click",function(){
+                var text = this.innerHTML; //text = button [i];
+                
+                var myvar = document.querySelector("h1");
+                myvar.innerHTML = text + " is clicked.";
+               });
+        }
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <a href="#">Visit Google</a>
+    <div class="my-div" style="background-color: aquamarine;">
+        <h1>Hello Everyone</h1>
+        <h2>Good Bye</h2>
+
+
+    </div>
+
+    <script>
+        // document.getElementsByTagName("p")[0]; for getElementByClassName, querySelectorAll & getElementByTagName index[] number must be used.
+        // Adding Element
+        var heading3 = document.createElement("h3");
+        var text = document.createTextNode("This is heading 3");
+        heading3.appendChild(text);
+       // Accessing the main class/container.
+        var mydiv = document.getElementsByClassName("my-div")[0];
+        mydiv.appendChild(heading3);
+
+        // Removing Element
+        heading2 = document.getElementsByTagName("h2")[0];
+        mydiv.removeChild(heading2);
+
+        var heading0 = document.createElement("h3");
+        var text0 = document.createTextNode("This is Heading 000 at First.");
+        heading0.appendChild(text0);
+
+        // Adding element at first
+        var heading1 = document.querySelector("h1");
+        mydiv.insertBefore(heading0,heading1);
+
+
+        document.getElementsByClassName("my-div")[0].classList.add("new-class");
+    //  document.getElementsByClassName("my-div")[0].classList.remove("new-class");
+    
+    </script>
+    
+</body>
+</html>
