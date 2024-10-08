@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .myButton{
+            width: 50px;
+            height: 50px;
+            margin: 5px;
+        }
+        .anim{
+            box-shadow: 0 15px 18px 0 tomato;
+            opacity: 0.5;
+
+        }
+
+    </style>
+</head>
+<body>
+    
+    <button class="myButton a">a</button>
+    <button class="myButton b">b</button>
+    <button class="myButton c">c</button>
+    <button class="myButton d">d</button>
+
+
+    <script>
+        var audios = document.querySelectorAll(".myButton");
+        var len = audios.length;
+
+        document.write(len);
+
+        for(var i=0;i<len;i++){
+           var d = document.querySelectorAll(".myButton")[i];
+           d.addEventListener("click",function(){
+                var text = this.innerHTML;
+                animPlay(text);
+                
+                switch(text){
+                    case "a":
+                        var audio = new Audio("./Cheap Thrills.mp3");
+                        audio.play();
+                        break;
+
+                    case "b":
+                        var audio = new Audio("./Electronomia.mp3");
+                        audio.play();
+                        break;
+
+                    case "c":
+                        var audio = new Audio("./Ishare Tere.mp3");
+                        audio.play();
+                        break;
+
+                    case "d":
+                        var audio = new Audio("./Love Me.mp3");
+                        audio.play();
+                        break;           
+                }
+            });   
+            
+            function animPlay(text){
+                var selected = document.querySelector("."+text);
+                selected.classList.add("anim");
+
+                setTimeout(function(){
+                    selected.classList.remove("anim");
+                },1000);
+            }
+        }
+
+       
+
+
+    </script>         
+    
+</body>
+</html>

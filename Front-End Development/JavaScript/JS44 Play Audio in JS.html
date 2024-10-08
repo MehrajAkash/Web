@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mybutton{
+            background-color: aquamarine;
+            padding: 10px;
+            border: 2px solid blue;
+            border-radius: 10px;
+        }
+        .mystyle{
+            opacity: .5;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <button class="mybutton">Cheap</button>
+    <button class="mybutton">Electronomia</button>
+    <button class="mybutton">Ishara</button>
+    <button class="mybutton">Love</button>
+
+    <script>
+        var audios = document.querySelectorAll(".mybutton");
+        var len = audios.length;
+        document.write(len);
+        for(var i=0;i<len;i++){
+           var d = document.querySelectorAll(".mybutton")[i];
+           d.addEventListener("mouseover",function(){
+                var text = this.innerHTML;
+                
+                switch(text){
+                    case "Cheap":
+                        var audio = new Audio("./Cheap Thrills.mp3");
+                        audio.play();
+                        break;
+
+                    case "Electronomia":
+                        var audio = new Audio("./Electronomia.mp3");
+                        audio.play();
+                        break;
+
+                    case "Ishara":
+                        var audio = new Audio("./Ishare Tere.mp3");
+                        audio.play();
+                        break;
+
+                    case "Love":
+                        var audio = new Audio("./Love Me.mp3");
+                        audio.play();
+                        break;           
+                }
+            });     
+
+        }
+
+   
+
+     
+        
+    </script>
+</body>
+</html>

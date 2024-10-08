@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="id"></div>
+    <h3>Cheap Thills</h3>
+    <button onclick="playf()">Play</button>
+    <button onclick="pausef()">Pause</button>
+
+    <audio id="music" controls>
+        <source src = "Cheap Thrills.mp3" type="audio/ogg">
+    </audio>
+
+    <script>
+        var m = document.querySelector("#music");
+        
+        function playf(){
+            m.play();
+        }
+        function pausef(){
+            m.pause();
+        }
+     
+    </script>
+
+</body>
+</html>
