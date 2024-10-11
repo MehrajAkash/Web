@@ -25,6 +25,7 @@
     <button class="myButton c">c</button>
     <button class="myButton d">d</button>
 
+    <h3>This is 2nd demo</h3>
 
     <script>
         var audios = document.querySelectorAll(".myButton");
@@ -36,9 +37,21 @@
            var d = document.querySelectorAll(".myButton")[i];
            d.addEventListener("click",function(){
                 var text = this.innerHTML;
+
+                audioPlay(text);
                 animPlay(text);
                 
-                switch(text){
+            });        
+        }
+
+        document.addEventListener("keypress",function(event){
+            var text = event.key;
+            audioPlay(text);
+            animPlay(text);
+        });
+
+        function audioPlay(text){
+            switch(text){
                     case "a":
                         var audio = new Audio("./Cheap Thrills.mp3");
                         audio.play();
@@ -59,20 +72,22 @@
                         audio.play();
                         break;           
                 }
-            });   
-            
-            function animPlay(text){
+        }
+
+        function animPlay(text){
                 var selected = document.querySelector("."+text);
                 selected.classList.add("anim");
 
                 setTimeout(function(){
                     selected.classList.remove("anim");
                 },1000);
-            }
         }
-
        
-
+    
+    /*   document.addEventListener("keypress",function(text){
+                document.querySelector("h3").innerHTML = "You Have Pressed : " + text.key;
+        });
+*/
 
     </script>         
     

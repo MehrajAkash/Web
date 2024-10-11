@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+   
+    <textarea name="" id="" row="30" col="30" style="height: 10rem;" ></textarea>
+    <p>Lorem ipsum dolor sit amet.</p>
+    
+    <script>
+        var count = 0;
+        document.querySelector("textarea").addEventListener("keypress",function(event){
+            var text = event.key;
+            count++;
+            document.querySelector("p").innerHTML = "You have pressed: "+ count + " characters";
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            max-width: 1000px;
+            margin: 0 auto;
+            
+        }
+        form{
+       /*    position: absolute;
+           top: 50%;
+           left: 50%;
+           transform: translate(-50%,-50%);
+           */
+           justify-content: center;
+           text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+
+    <form action="">
+        <div class="name">
+            <label for="name">Name: 
+                <input type="text" id="name" name="name" required autofocus>
+            </label>
+        </div>
+       <br/> 
+       <div class="email">
+        <label for="email">E-mail: 
+            <input type="email" id="email" name="email" required size="25">
+        </label> 
+       </div>
+      <br>
+      <div class="password">
+        <label for="password">Password: 
+            <input type="password" id="password" name="password" required minlength="4" maxlength="8">
+        </label>
+      </div>
+      <br>
+    <div class="submit">
+        <input type="submit" value="signup">
+    </div>
+    </form>
+
+    
+    <script>
+        const form = document.querySelector("form");
+        const name = form.querySelector(".name #name");
+        const email = form.querySelector(".email #email");
+        const password = form.querySelector(".password #password");
+
+       // console.log(name);
+      //  console.log(password);
+
+      form.addEventListener("submit",formhandler);
+
+      function formhandler(e){
+            e.preventDefault(); //for not removing data at a time
+            console.log("submittrr");
+            
+            console.log(name.value);
+            console.log(email.value);
+
+            const userinfo = {
+                name: name.value,
+                email: email.value,
+                password: password.value,
+            }
+            console.log(userinfo);
+
+            password.value=""; // reseting password after all activities
+      }
+   </script>
+    
+</body>
+</html>
