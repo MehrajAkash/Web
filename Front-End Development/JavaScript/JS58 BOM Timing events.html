@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button class="save-btn">Save</button>
+    <p class="message"></p>
+    <script>
+   /*     setTimeout(()=>{
+              document.write('hi after 3 seconds.');
+          },3000)
+        */ /*
+    setTimeout(display, 2000);  
+    function display(){
+        document.write("Display fuction.");
+    }
+  
+        const saveButton = document.querySelector(".save-btn");
+        const message = document.querySelector('.message');
+
+        saveButton.addEventListener('click', saveUser);
+        function saveUser(){
+            message.textContent = "User registration successful";
+*/ /*
+            setTimeout(()=>{
+                message.textContent = "";
+            },3000)
+        }
+            */
+
+       const saveButton = document.querySelector(".save-btn");
+        const message = document.querySelector('.message');
+
+        saveButton.addEventListener('click', displayCount);
+        function displayCount(){
+            let count = 0;
+            message.textContent = count;
+
+            setInterval(()=>{
+                count++;
+                message.textContent = count;
+            },1000)
+        }
+
+
+    </script>
+</body>
+</html>

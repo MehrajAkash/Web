@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button class="save-btn">Save</button>
+    <p class="para"></p>
+   
+
+
+    <script>
+      const saveButton = document.querySelector(".save-btn");
+      const paragraph = document.querySelector(".para");
+
+      saveButton.addEventListener('click', startClock);
+
+      function startClock(){
+        let date = new Date();
+        let hours = date.getHours();
+        let minutes = date.getMinutes();
+        let seconds = date.getSeconds();
+
+        
+        hours = formatTime(hours);
+        minutes = formatTime(minutes);
+        seconds = formatTime(seconds);
+
+        let time = hours + ":" + minutes + ":" + seconds;
+        paragraph.textContent = time;
+        
+       function formatTime(value){
+            if(value < 10){
+                 value = "0"+ value;
+            }
+            return value;
+        }
+   
+        setInterval(startClock, 1000);  // setInterval() is a built in function
+
+      }
+
+    </script>
+</body>
+</html>

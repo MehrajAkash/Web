@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Browser Object Model -- BOM</h1>
+    <div class="location-div">
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+    </div>
+
+    <button class="myButton"> Visit my webpage </button> <br> 
+
+
+    <script>   
+       var locationDiv = document.querySelector(".location-div");
+
+       var p1 = locationDiv.children[0];
+       p1.textContent = "p1: " + location.href;
+
+        var p2 = locationDiv.children[1];
+        p2.innerHTML = 'p2: ' + location.hostname;
+
+        var p3 = locationDiv.children[3];
+        p3.textContent = 'p3: ' + location.protocol;
+
+        const visitButton = document.getElementsByClassName("myButton")[0];
+        visitButton.addEventListener("click", function(){
+            document.write("Hi");
+            location.assign("https://www.studywithanis.com");
+        });
+
+
+        console.clear();
+        document.write(location  + "<br>");
+
+        document.write(location.protocol + '<br>');
+        document.write(location.hostname + '<br>');
+        document.write(location.port + '<br>');
+        document.write(location.pathname + '<br>');
+        document.write('<br>');
+    </script>
+</body>
+</html>

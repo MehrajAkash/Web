@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+  
+    <script>
+        function deleteSomething(){
+            let value = confirm('Do you want to delete?');
+            if(value){
+                document.write("deleted");
+            }else{
+                document.write("not deleted");
+            }
+        }
+        deleteSomething();
+
+       welcome();
+        function welcome(){
+            let text;
+            var mess = document.createElement('h1');
+
+            var name = prompt("Enter your name: ");
+            if(name == null || name == ""){
+                text = 'no name found';
+            }else{
+                text = name;
+            }
+
+            var textNode = document.createTextNode(text);
+            mess.appendChild(textNode);
+            document.body.appendChild(mess);
+
+        }
+
+
+    </script>
+</body>
+</html>
