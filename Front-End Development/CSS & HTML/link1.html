@@ -2,12 +2,24 @@
 <head>
     <title>HTML work Demo</title>
     <style>
-      .desc{
+        .desc{
+            position: relative;
+            height: 150px;
+        }
+        .desc>p{
+            text-align: center;
+        }
+      .link{
             border: 2px solid red;
             text-align: left;
             width: 200px;
             padding: 20px;
             margin-top: 20px;
+
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
         }
     </style>
 </head>
@@ -19,19 +31,22 @@
                 <td width="200" align="center"><b><a href="index1.html">HOME</a></b></td>
                 <td width="200" align="center"><b><a href="service1.html">SERVICE</a></b></td>
                 <td width="200" align="center"><b><a href="link1.html">LINK</a></b></td>
-                <td width="200" align="center"><b><a href="contact.html">CONTACT</a></b></td>
+                <td width="200" align="center"><b><a href="contact1.html">CONTACT</a></b></td>
             </tr>    
         </table>
     </center>
     <p align="center"><b><u><font size="5">Some Useful Links</font></u></b></p>
     <br/>
 
-    Here is some Useful links by which you can browse those sites: <br/>
+  
     <div class="desc">
-        
-        1. <a href="http://mail.yahoo.com" target="_blank">Yahoo e-mail Service</a><br/>
-        2. <a href="http://www.microsoft.com" target="_blank">Microsoft Corporation</a><br/>
-        3. <a href="http://www.bbc.co.uk" target="_blank">BBC News Service</a>
+        <p>Here is some Useful links by which you can browse those sites: </p><br/><br/>
+        <div class="link">
+            1. <a href="http://mail.yahoo.com" target="_blank">Yahoo e-mail Service</a><br/>
+            2. <a href="http://www.microsoft.com" target="_blank">Microsoft Corporation</a><br/>
+            3. <a href="http://www.bbc.co.uk" target="_blank">BBC News Service</a>
+        </div>
+       
 
     </div>
    
